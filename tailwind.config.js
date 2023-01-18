@@ -1,11 +1,23 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    colors: {
+      transparent: "transparent",
+      red: "#c50d0d",
+      white: "#FAFAFA",
+      black: "#6B755",
+      gold: "#f0DC82",
+    },
+    extend: {
+      fontFamily: {
+        artifexCF: "var(--font-artifexCF)",
+        utsaah: "var(--font-utsaah)",
+      },
+    },
   },
   plugins: [],
 };
