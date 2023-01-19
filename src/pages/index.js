@@ -44,7 +44,7 @@ export default function Home() {
                     Read More
                   </a>
                 </div> */}
-                <div className="absolute bottom-0 text-white w-full left-0 px-[5%] pt-[1%] pb-[2%] items-start text-start font-opensans bg-transparent/60">
+                <div className="absolute bottom-0 text-white w-full left-0 px-[5%] pt-[2%] pb-[2%] items-start text-start font-opensans bg-transparent/60">
                   <h2 className="font-bold text-3xl pb-6 font-graphik">Sample Title</h2>
                   <p className="text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, tenetur ea. Rerum animi id quod, inventore quam facere laboriosam placeat itaque. Sequi necessitatibus sapiente nulla debitis suscipit sed dolores. Consectetur? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam error saepe ut reprehenderit libero numquam deserunt sed facere aliquid! Odit, recusandae praesentium sint iusto iure molestias soluta autem ipsa amet.</p>
                 </div>
