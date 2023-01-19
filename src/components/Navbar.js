@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <Fade>
       <div className="flex flex-col  bg-[#1a1a1a] text-gold font-graphik sticky top-0 z-10 py-5 ">
-        <div className="flex flex-row justify-between items-center relative px-[10%]">
+        <div className="flex flex-row justify-between items-center relative px-[10%] md:px-[5%]">
           <div className="w-1/4 flex flex-row items-center gap-6 md:gap-10">
             <Image
               src={logo}
