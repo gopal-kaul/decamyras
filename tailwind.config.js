@@ -9,13 +9,16 @@ module.exports = {
       transparent: "transparent",
       red: "#c50d0d",
       white: "#FAFAFA",
-      black: "#6B755",
+      black: "#000000",
       gold: "#f0DC82",
+      brown: "#4D3938",
     },
     extend: {
       fontFamily: {
         artifexCF: "var(--font-artifexCF)",
         utsaah: "var(--font-utsaah)",
+        graphik: "var(--font-graphik)",
+        opensans: "var(--font-opensans)",
       },
     },
   },
