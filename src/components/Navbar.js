@@ -17,7 +17,7 @@ export default function Navbar() {
             />
             <div className="">
               <h2 className="font-artifexCF font-bold text-2xl lg:text-[2.5vw] tracking-widest leading-tight pt-2 md:pt-5">
-                Decamyra's
+                Decamyra&apos;s
               </h2>
               <p className="font-utsaah text-md lg:text-[1.5vw] tracking-wide text-white/80">
                 A Luxury Living

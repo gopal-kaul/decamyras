@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Decamyra's</title>
+        <title>Decamyra&apos;s</title>
         <meta name="description" content="Decamyra's" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>

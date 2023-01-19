@@ -8,7 +8,7 @@ export default function Footer() {
         <div>
           <h3 className="font-bold text-3xl pb-4 font-graphik">Address</h3>
           <p className="leading-[1.25]">
-            Decamyra's
+            Decamyra&apos;s
             <br />
             Hyderabad
             <br />
@@ -43,7 +43,7 @@ export default function Footer() {
         </div>
       </div>
       <p className="text-center py-2">
-        &copy; Copyright 2023 <span className="font-bold">Decamyra's</span>
+        &copy; Copyright 2023 <span className="font-bold">Decamyra&apos;s</span>
       </p>
     </footer>
   );
