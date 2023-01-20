@@ -116,7 +116,7 @@ const graphik = localFont({
 export default function App({ Component, pageProps }) {
   return (
     <div
-      className={` ${utsaah.variable} ${artifexCF.variable} ${graphik.variable} ${opensans.variable} font-sans`}
+      className={` ${utsaah.variable} ${artifexCF.variable} ${graphik.variable} ${opensans.variable} font-sans scroll-smooth`}
     >
       <Navbar />
       <Component {...pageProps} />
