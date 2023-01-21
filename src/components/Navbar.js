@@ -8,7 +8,7 @@ export default function Navbar() {
   const [menu, setMenu] = useState(false);
   return (
     <Fade>
-      <div className="flex flex-col  bg-[#1a1a1a] text-gold font-graphik sticky top-0 z-10 py-5 ">
+      <div className="flex flex-col bg-[#1a1a1a] text-gold font-graphik sticky top-0 z-10 py-5 ">
         <div className="flex flex-row justify-between items-center relative px-[10%] md:px-[5%]">
           <div className="w-1/4 flex flex-row items-center gap-6 md:gap-10">
             <Image
@@ -117,8 +117,8 @@ export default function Navbar() {
             >
                 <ActiveLink href="/">Home</ActiveLink>
                 <ActiveLink href="/furniture">Furniture</ActiveLink>
-                <ActiveLink href="#">Our Service</ActiveLink>
                 <ActiveLink href="#">Gallery</ActiveLink>
+                <ActiveLink href="#">Our Service</ActiveLink>
                 <ActiveLink href="#">Our Team</ActiveLink>
                 <ActiveLink href="#">Contact Us</ActiveLink>
             </ul>
@@ -126,8 +126,8 @@ export default function Navbar() {
           <ul className="hidden md:flex flex-row items-center uppercase font-utsaah text-[1.6vw] pt-[1%] gap-10">
             <ActiveLink href="/">home</ActiveLink>
             <ActiveLink href="/furniture">furniture</ActiveLink>
-            <ActiveLink href="#">our service</ActiveLink>
             <ActiveLink href="#">gallery</ActiveLink>
+            <ActiveLink href="#">our service</ActiveLink>
             <ActiveLink href="#">our team</ActiveLink>
             <ActiveLink href="#">contact us</ActiveLink>
           </ul>

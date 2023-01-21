@@ -7,7 +7,7 @@ const artifexCF = localFont({
   src: "../fonts/ArtifexCF/ArtifexCF-Regular.woff2",
   variable: "--font-artifexCF",
 });
-const opensans = Open_Sans({ subsets: ["latin"], variable:"--font-opensans" });
+const opensans = Open_Sans({ subsets: ["latin"], variable: "--font-opensans" });
 const utsaah = localFont({
   src: [
     {
@@ -114,13 +114,16 @@ const graphik = localFont({
 });
 
 export default function App({ Component, pageProps }) {
-  return (
-    <div
-      className={` ${utsaah.variable} ${artifexCF.variable} ${graphik.variable} ${opensans.variable} font-sans scroll-smooth`}
-    >
-      <Navbar />
-      <Component {...pageProps} />
-      <Footer />
-    </div>
-  );
+  const getLayout =
+    Component.getLayout ||
+    ((page) => (
+      <div
+        className={`${utsaah.variable} ${artifexCF.variable} ${graphik.variable} ${opensans.variable} font-sans scroll-smooth`}
+      >
+        <Navbar />
+        {page}
+        <Footer />
+      </div>
+    ));
+  return getLayout(<Component {...pageProps} />);
 }

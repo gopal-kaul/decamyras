@@ -1,9 +1,11 @@
 import { HiPhone } from "react-icons/hi";
 import { MdEmail } from "react-icons/md";
 import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
-export default function Footer() {
+export default function Footer({ className }) {
   return (
-    <footer className="w-full font-utsaah bg-[#1a1a1a] text-gold px-[10%]">
+    <footer
+      className={`w-full font-utsaah bg-[#1a1a1a] text-gold px-[10%] ${className}`}
+    >
       <div className="flex flex-row justify-between pt-[2%] text-2xl">
         <div>
           <h3 className="font-bold text-3xl pb-4 font-graphik">Address</h3>
