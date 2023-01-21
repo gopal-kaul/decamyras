@@ -7,15 +7,16 @@ import Footer from "@/components/Footer";
 import { useEffect, useRef } from "react";
 export default function Home() {
   const main = useRef(null);
-  useEffect(() => {
-    const scroll = function (e) {
-      if (e.deltaY > 0) main.current.scrollIntoView({ behaviour: "smooth" });
-    };
-    document.addEventListener("wheel", scroll);
-    return () => {
-      document.removeEventListener("wheel", scroll);
-    };
-  }, []);
+  const co = useRef(null);
+  // useEffect(() => {
+  //   const scroll = function (e) {
+  //     if (e.deltaY > 0) main.current.scrollIntoView({ behaviour: "smooth" });
+  //   };
+  //   document.addEventListener("wheel", scroll);
+  //   return () => {
+  //     document.removeEventListener("wheel", scroll);
+  //   };
+  // }, []);
   return (
     <>
       <Head>
@@ -27,6 +28,10 @@ export default function Home() {
         <Fade>
           <div
             className={`h-screen bg-[url('/carousel/2.jpg')] bg-cover bg-center bg-no-repeat overflow-scroll scroll-smooth`}
+            onWheel={(e) => {
+              if (e.deltaY > 0) main.current.scrollIntoView();
+              else co.current.scrollIntoView();
+            }}
           >
             {/* <img
                   src={`/carousel/${ele}.jpg`}
@@ -49,7 +54,7 @@ export default function Home() {
                   </a>
                 </div> */}
             <div className="sticky bottom-0">
-              <div className="h-screen"></div>
+              <div ref={co} className="h-screen"></div>
               <div
                 className="text-white w-full px-[5%] pt-[2%] pb-[2%] items-start text-start font-opensans bg-transparent/60"
                 ref={main}
