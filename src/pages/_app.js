@@ -3,11 +3,12 @@ import localFont from "@next/font/local";
 import Navbar from "@/components/Navbar";
 import { Open_Sans } from "@next/font/google";
 import Footer from "@/components/Footer";
+import { useEffect, useRef } from "react";
 const artifexCF = localFont({
   src: "../fonts/ArtifexCF/ArtifexCF-Regular.woff2",
   variable: "--font-artifexCF",
 });
-const opensans = Open_Sans({ subsets: ["latin"], variable:"--font-opensans" });
+const opensans = Open_Sans({ subsets: ["latin"], variable: "--font-opensans" });
 const utsaah = localFont({
   src: [
     {
@@ -114,13 +115,32 @@ const graphik = localFont({
 });
 
 export default function App({ Component, pageProps }) {
+  const ref = useRef(null);
+  useEffect(() => {
+    ref.current.style.maxHeight =
+      window.innerHeight -
+      document.querySelector("nav").clientHeight -
+      16 +
+      "px";
+    ref.current.style.minHeight =
+      window.innerHeight -
+      document.querySelector("nav").clientHeight -
+      16 +
+      "px";
+    ref.current.style.height =
+      window.innerHeight -
+      document.querySelector("nav").clientHeight -
+      16 +
+      "px";
+  }, []);
   return (
     <div
-      className={` ${utsaah.variable} ${artifexCF.variable} ${graphik.variable} ${opensans.variable} font-sans scroll-smooth`}
+      className={` ${utsaah.variable} ${artifexCF.variable} ${graphik.variable} ${opensans.variable} font-sans scroll-smooth w-screen h-screen overflow-hidden bg-[#1a1a1a]`}
     >
       <Navbar />
-      <Component {...pageProps} />
-      <Footer />
+      <main ref={ref} className={`overflow-y-scroll w-full px-4`}>
+        <Component {...pageProps} />
+      </main>
     </div>
   );
 }
