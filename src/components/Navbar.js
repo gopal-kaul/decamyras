@@ -3,6 +3,7 @@ import ActiveLink from "./ActiveLink";
 import { Fade } from "react-reveal";
 import logo from "../../public/logo.png";
 import { useState } from "react";
+import Navlinks from "./Navlinks";
 
 export default function Navbar({ ...props }) {
   const [menu, setMenu] = useState(false);
@@ -118,21 +119,11 @@ export default function Navbar({ ...props }) {
                 menu ? "flex" : "hidden"
               } flex-col items-start uppercase font-utsaah text-2xl lg:text-[1.6vw] gap-8 absolute top-full pt-[10%] left-0 w-screen bg-[#1a1a1a] h-screen pl-[13%]`}
             >
-              <ActiveLink href="/">Home</ActiveLink>
-              <ActiveLink href="/furniture">Furniture</ActiveLink>
-              <ActiveLink href="#">Our Service</ActiveLink>
-              <ActiveLink href="#">Gallery</ActiveLink>
-              <ActiveLink href="#">Our Team</ActiveLink>
-              <ActiveLink href="/contactus">Contact Us</ActiveLink>
+              <Navlinks />
             </ul>
           </div>
           <ul className="hidden md:flex flex-row items-center uppercase font-utsaah text-[1.6vw] pt-[1%] gap-10">
-            <ActiveLink href="/">home</ActiveLink>
-            <ActiveLink href="/furniture">furniture</ActiveLink>
-            <ActiveLink href="#">our service</ActiveLink>
-            <ActiveLink href="#">gallery</ActiveLink>
-            <ActiveLink href="#">our team</ActiveLink>
-            <ActiveLink href="/contactus">contact us</ActiveLink>
+            <Navlinks />
           </ul>
         </div>
       </nav>
