@@ -134,6 +134,7 @@ export default function App({ Component, pageProps }) {
         16 +
         "px";
     };
+    setContainer();
     window.addEventListener("resize", setContainer);
     return () => {
       window.removeEventListener("resize", setContainer);
