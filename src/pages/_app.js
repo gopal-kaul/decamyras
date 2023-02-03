@@ -117,21 +117,27 @@ const graphik = localFont({
 export default function App({ Component, pageProps }) {
   const ref = useRef(null);
   useEffect(() => {
-    ref.current.style.maxHeight =
-      window.innerHeight -
-      document.querySelector("nav").clientHeight -
-      16 +
-      "px";
-    ref.current.style.minHeight =
-      window.innerHeight -
-      document.querySelector("nav").clientHeight -
-      16 +
-      "px";
-    ref.current.style.height =
-      window.innerHeight -
-      document.querySelector("nav").clientHeight -
-      16 +
-      "px";
+    const setContainer = () => {
+      ref.current.style.maxHeight =
+        window.innerHeight -
+        document.querySelector("nav").clientHeight -
+        16 +
+        "px";
+      ref.current.style.minHeight =
+        window.innerHeight -
+        document.querySelector("nav").clientHeight -
+        16 +
+        "px";
+      ref.current.style.height =
+        window.innerHeight -
+        document.querySelector("nav").clientHeight -
+        16 +
+        "px";
+    };
+    window.addEventListener("resize", setContainer);
+    return () => {
+      window.removeEventListener("resize", setContainer);
+    };
   }, []);
   return (
     <div
