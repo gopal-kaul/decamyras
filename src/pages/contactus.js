@@ -43,14 +43,14 @@ export default function Home() {
               placeholder="John Doe"
               type="text"
               name="name"
-              className="focus:outline-none focus:ring-4 focus:ring-gold px-1 py-1 w-fit"
+              className="focus:outline-none ring-2 focus:ring-4 ring-gold px-1 py-1 w-fit focus:rounded-sm"
             />
             <label className="font-bold">Email</label>
             <input
               placeholder="johndoe@gmail.com"
               type="email"
               name="email"
-              className="focus:outline-none focus:ring-4 focus:ring-gold px-1 py-1 w-fit"
+              className="focus:outline-none ring-2 focus:ring-4 ring-gold px-1 py-1 w-fit focus:rounded-sm"
             />
             <button type="submit" className="uppercase bg-[#1a1a1a] text-gold transition-colors duration-300 ease-in-out hover:bg-gold hover:text-[#1a1a1a] w-fit px-10 font-bold py-3">
               Submit
