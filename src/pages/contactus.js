@@ -25,11 +25,11 @@ export default function Home() {
             info@decamyras.com
           </a>
         </div>
-        <div className="flex flex-col md:flex-row w-full gap-y-5 md:gap-0 grow">
+        <div className="flex flex-col md:flex-row w-full gap-y-5 md:gap-0 grow pb-4 md:pb-0">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.4843388213676!2d78.4902006!3d17.436517399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9a1bb1955555%3A0x7ff18a28fa08c210!2sGovdan%20Group!5e0!3m2!1sen!2sin!4v1675441974338!5m2!1sen!2sin"
             allowfullscreen=""
-            className="w-full md:w-1/2 min-h-full"
+            className="w-full md:w-1/2 min-h-[50vh] md:min-h-full"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
