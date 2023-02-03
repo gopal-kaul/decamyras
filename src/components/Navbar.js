@@ -4,11 +4,14 @@ import { Fade } from "react-reveal";
 import logo from "../../public/logo.png";
 import { useState } from "react";
 
-export default function Navbar() {
+export default function Navbar({ ...props }) {
   const [menu, setMenu] = useState(false);
   return (
     <Fade>
-      <div className="flex flex-col  bg-[#1a1a1a] text-gold font-graphik sticky top-0 z-10 py-5 ">
+      <nav
+        className="flex flex-col bg-[#1a1a1a] text-gold font-graphik z-10 py-5"
+        {...props}
+      >
         <div className="flex flex-row justify-between items-center relative px-[10%] md:px-[5%]">
           <div className="w-1/4 flex flex-row items-center gap-6 md:gap-10">
             <Image
@@ -115,12 +118,12 @@ export default function Navbar() {
                 menu ? "flex" : "hidden"
               } flex-col items-start uppercase font-utsaah text-2xl lg:text-[1.6vw] gap-8 absolute top-full pt-[10%] left-0 w-screen bg-[#1a1a1a] h-screen pl-[13%]`}
             >
-                <ActiveLink href="/">Home</ActiveLink>
-                <ActiveLink href="/furniture">Furniture</ActiveLink>
-                <ActiveLink href="#">Our Service</ActiveLink>
-                <ActiveLink href="#">Gallery</ActiveLink>
-                <ActiveLink href="#">Our Team</ActiveLink>
-                <ActiveLink href="#">Contact Us</ActiveLink>
+              <ActiveLink href="/">Home</ActiveLink>
+              <ActiveLink href="/furniture">Furniture</ActiveLink>
+              <ActiveLink href="#">Our Service</ActiveLink>
+              <ActiveLink href="#">Gallery</ActiveLink>
+              <ActiveLink href="#">Our Team</ActiveLink>
+              <ActiveLink href="/contactus">Contact Us</ActiveLink>
             </ul>
           </div>
           <ul className="hidden md:flex flex-row items-center uppercase font-utsaah text-[1.6vw] pt-[1%] gap-10">
@@ -129,10 +132,10 @@ export default function Navbar() {
             <ActiveLink href="#">our service</ActiveLink>
             <ActiveLink href="#">gallery</ActiveLink>
             <ActiveLink href="#">our team</ActiveLink>
-            <ActiveLink href="#">contact us</ActiveLink>
+            <ActiveLink href="/contactus">contact us</ActiveLink>
           </ul>
         </div>
-      </div>
+      </nav>
     </Fade>
   );
 }
