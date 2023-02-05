@@ -76,7 +76,7 @@ export default function Home() {
                 </label>
                 <textarea
                   name="info"
-                  className="focus:outline-none ring-2 focus:ring-4 ring-gold px-1 py-1 w-full focus:rounded-sm"
+                  className="focus:outline-none ring-2 focus:ring-4 ring-gold px-1 py-1 w-full focus:rounded-sm min-h-[85%]"
                 />
               </div>
             </div>
