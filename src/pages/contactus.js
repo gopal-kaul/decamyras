@@ -26,28 +26,28 @@ export default function Home() {
             info@decamyras.com
           </a>
         </div>
-        <div className="flex flex-col md:flex-row w-full gap-y-5 gap-x-20 grow pb-4 md:pb-20 px-4 md:px-20">
+        <div className="flex flex-col md:flex-row w-full gap-y-5 gap-x-10 grow pb-4 md:pb-20 px-4 md:px-20">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.4843388213676!2d78.4902006!3d17.436517399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9a1bb1955555%3A0x7ff18a28fa08c210!2sGovdan%20Group!5e0!3m2!1sen!2sin!4v1675441974338!5m2!1sen!2sin"
-            allowfullscreen=""
-            className="w-full md:w-[40%] min-h-[40vh] md:min-h-full"
+            allowFullScreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+            className="w-full md:w-[40%] min-h-[40vh] md:min-h-full"
+            referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
           <form
             action="#"
             method="post"
-            className="px-4 py-8 md:p-20 flex flex-col justify-between gap-3 md:w-[60%] bg-gray rounded-lg"
+            className="px-4 py-8 md:px-10 md:py-20 flex flex-col justify-between gap-3 md:w-[60%] bg-gray rounded-lg"
           >
-            <div className="flex flex-col md:flex-row gap-y-3 gap-x-10">
-              <div className="flex flex-col gap-3 w-full md:w-auto">
+            <div className="flex flex-col md:flex-row justify-between gap-y-3 gap-x-10">
+              <div className="flex flex-col gap-3 w-full md:w-[35%]">
                 <div className="flex flex-col gap-3">
                   <label className="font-bold text-white">Name</label>
                   <input
                     placeholder="John Doe"
                     type="text"
                     name="name"
-                    className="focus:outline-none ring-2 focus:ring-4 ring-gold px-1 py-1 w-fit focus:rounded-sm"
+                    className="focus:outline-none ring-2 focus:ring-4 ring-gold px-1 py-1 w-full rounded-md"
                   />
                 </div>
                 <div className="flex flex-col gap-3">
@@ -56,7 +56,7 @@ export default function Home() {
                     placeholder="+91-1234567890"
                     type="text"
                     name="phone"
-                    className="focus:outline-none ring-2 focus:ring-4 ring-gold px-1 py-1 w-fit focus:rounded-sm"
+                    className="focus:outline-none ring-2 focus:ring-4 ring-gold px-1 py-1 w-full rounded-lg"
                   />
                 </div>
 
@@ -66,17 +66,17 @@ export default function Home() {
                     placeholder="johndoe@gmail.com"
                     type="email"
                     name="email"
-                    className="focus:outline-none ring-2 focus:ring-4 ring-gold px-1 py-1 w-fit focus:rounded-sm"
+                    className="focus:outline-none ring-2 focus:ring-4 ring-gold px-1 py-1 w-full rounded-lg"
                   />
                 </div>
               </div>
-              <div className="flex flex-col gap-3 w-full">
+              <div className="flex flex-col gap-3 w-full md:w-[55%]">
                 <label className="font-bold text-white">
                   Additional Information
                 </label>
                 <textarea
                   name="info"
-                  className="focus:outline-none ring-2 focus:ring-4 ring-gold px-1 py-1 w-full focus:rounded-sm min-h-[85%]"
+                  className="focus:outline-none ring-2 focus:ring-4 ring-gold px-1 py-1 w-full rounded-lg min-h-[85%]"
                 />
               </div>
             </div>
@@ -97,22 +97,13 @@ export default function Home() {
                     primary: "#F0DC82",
                   },
                 })}
-                className="w-full focus:outline-none border-2 focus:border-4 border-gold px-1 py-1 focus:rounded-sm"
+                className="w-full focus:outline-none border-2 focus:border-4 border-gold px-1 py-1 rounded-lg"
                 options={[
                   { value: "Linen", label: "Linen" },
                   { value: "Bedsheets", label: "Bedsheets" },
                   { value: "Placeholder", label: "Another placeholder" },
                 ]}
               />
-              {/* <select
-                name="products"
-                multiple
-                className="focus:outline-none ring-2 focus:ring-4 ring-gold px-1 py-1 w-fit focus:rounded-sm"
-              >
-                <option>Linen</option>
-                <option>Bedsheets</option>
-                <option>Another Option</option>
-              </select> */}
             </div>
             <div className="grid place-items-center">
               <button
