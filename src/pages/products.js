@@ -1,6 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
-import Towel from "../../public/products/product1.jpg"
 export default function Products() {
   return (
     <>
@@ -11,9 +9,8 @@ export default function Products() {
       </Head>
       <div className="bg-white min-h-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 place-items-center px-4 md:px-20 gap-x-10 gap-y-20 py-10">
         <div className="relative shadow-xl rounded-3xl">
-          <Image
-            fill
-            src={Towel}
+          <img
+            src="/products/product1.jpg"
             className="object-cover rounded-3xl"
           />
           <div className="absolute bottom-0 left-0 w-full text-center rounded-3xl bg-opacity-50 bg-cardWhite">
@@ -21,9 +18,8 @@ export default function Products() {
           </div>
         </div>
         <div className="relative shadow-xl rounded-3xl">
-          <Image
-            fill
-            src={Towel}
+          <img
+            src="/products/product1.jpg"
             className="object-cover rounded-3xl"
           />
           <div className="absolute bottom-0 left-0 w-full text-center rounded-3xl bg-opacity-50 bg-cardWhite">
@@ -31,9 +27,8 @@ export default function Products() {
           </div>
         </div>
         <div className="relative shadow-xl rounded-3xl">
-          <Image
-            fill
-            src={Towel}
+          <img
+            src="/products/product1.jpg"
             className="object-cover rounded-3xl"
           />
           <div className="absolute bottom-0 left-0 w-full text-center rounded-3xl bg-opacity-50 bg-cardWhite">
@@ -41,9 +36,8 @@ export default function Products() {
           </div>
         </div>
         <div className="relative shadow-xl rounded-3xl">
-          <Image
-            fill
-            src={Towel}
+          <img
+            src="/products/product1.jpg"
             className="object-cover rounded-3xl"
           />
           <div className="absolute bottom-0 left-0 w-full text-center rounded-3xl bg-opacity-50 bg-cardWhite">
@@ -51,9 +45,8 @@ export default function Products() {
           </div>
         </div>
         <div className="relative shadow-xl rounded-3xl">
-          <Image
-            fill
-            src={Towel}
+          <img
+            src="/products/product1.jpg"
             className="object-cover rounded-3xl"
           />
           <div className="absolute bottom-0 left-0 w-full text-center rounded-3xl bg-opacity-50 bg-cardWhite">
@@ -61,9 +54,8 @@ export default function Products() {
           </div>
         </div>
         <div className="relative shadow-xl rounded-3xl">
-          <Image
-            fill
-            src={Towel}
+          <img
+            src="/products/product1.jpg"
             className="object-cover rounded-3xl"
           />
           <div className="absolute bottom-0 left-0 w-full text-center rounded-3xl bg-opacity-50 bg-cardWhite">
@@ -71,9 +63,8 @@ export default function Products() {
           </div>
         </div>
         <div className="relative shadow-xl rounded-3xl">
-          <Image
-            fill
-            src={Towel}
+          <img
+            src="/products/product1.jpg"
             className="object-cover rounded-3xl"
           />
           <div className="absolute bottom-0 left-0 w-full text-center rounded-3xl bg-opacity-50 bg-cardWhite">
@@ -81,9 +72,8 @@ export default function Products() {
           </div>
         </div>
         <div className="relative shadow-xl rounded-3xl">
-          <Image
-            fill
-            src={Towel}
+          <img
+            src="/products/product1.jpg"
             className="object-cover rounded-3xl"
           />
           <div className="absolute bottom-0 left-0 w-full text-center rounded-3xl bg-opacity-50 bg-cardWhite">
@@ -91,9 +81,8 @@ export default function Products() {
           </div>
         </div>
         <div className="relative shadow-xl rounded-3xl">
-          <Image
-            fill
-            src={Towel}
+          <img
+            src="/products/product1.jpg"
             className="object-cover rounded-3xl"
           />
           <div className="absolute bottom-0 left-0 w-full text-center rounded-3xl bg-opacity-50 bg-cardWhite">
@@ -101,9 +90,8 @@ export default function Products() {
           </div>
         </div>
         <div className="relative shadow-xl rounded-3xl">
-          <Image
-            fill
-            src={Towel}
+          <img
+            src="/products/product1.jpg"
             className="object-cover rounded-3xl"
           />
           <div className="absolute bottom-0 left-0 w-full text-center rounded-3xl bg-opacity-50 bg-cardWhite">
