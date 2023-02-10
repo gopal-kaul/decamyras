@@ -14,6 +14,7 @@ module.exports = {
       brown: "#4D3938",
       gray: "#1a1a1a",
       cardWhite: "#D9D9D9",
+      bgWhite: "#FAF9F6",
     },
     extend: {
       fontFamily: {
