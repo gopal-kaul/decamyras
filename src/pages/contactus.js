@@ -9,7 +9,9 @@ export default function Home() {
         <meta name="description" content="Decamyra's" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <div className="flex justify-center items-center flex-col min-h-full bg-white gap-y-[10%]">
+      <div
+        className="flex justify-center items-center flex-col min-h-full bg-bgWhite gap-y-[10%] rounded-md"
+      >
         <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-y-4 place-content-evenly place-items-center py-10">
           <a
             className="flex flex-row items-center gap-4 border-4 border-gold shadow-lg px-4 py-2 rounded-lg hover:scale-105 transition-transform duration-300 ease-in-out"
