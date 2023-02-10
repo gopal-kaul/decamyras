@@ -7,7 +7,7 @@ export default function Products() {
         <meta name="description" content="Decamyra's" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <div className="bg-white min-h-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 place-items-center px-4 md:px-20 gap-x-10 gap-y-20 py-10">
+      <div className="bg-bgWhite min-h-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 place-items-center px-4 md:px-20 gap-x-10 gap-y-20 py-10">
         <div className="relative shadow-xl rounded-3xl">
           <img
             src="/products/product1.jpg"
