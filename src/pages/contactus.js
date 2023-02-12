@@ -1,7 +1,7 @@
 import { MdOutlineLocalPhone, MdOutlineEmail } from "react-icons/md";
 import Select from "react-select/";
 import Head from "next/head";
-export default function Home() {
+export default function ContactUs() {
   return (
     <>
       <Head>
