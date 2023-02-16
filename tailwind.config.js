@@ -19,9 +19,8 @@ module.exports = {
     extend: {
       fontFamily: {
         artifexCF: "var(--font-artifexCF)",
+        quicksand: "var(--font-quicksand)",
         utsaah: "var(--font-utsaah)",
-        graphik: "var(--font-graphik)",
-        opensans: "var(--font-opensans)",
       },
     },
   },
