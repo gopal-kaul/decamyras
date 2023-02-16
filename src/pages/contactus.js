@@ -9,31 +9,28 @@ export default function ContactUs() {
         <meta name="description" content="Decamyra's" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <div
-        className="flex justify-center items-center flex-col min-h-full bg-bgWhite gap-y-[10%] rounded-md"
-      >
-        <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-y-4 place-content-evenly place-items-center py-10">
+      <div className="flex justify-center items-center flex-col min-h-full bg-bgWhite gap-y-[10%] rounded-lg">
+        <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-y-4 place-content-evenly place-items-center py-5">
           <a
-            className="flex flex-row items-center gap-4 border-4 border-gold shadow-lg px-4 py-2 rounded-lg hover:scale-105 transition-transform duration-300 ease-in-out"
+            className="flex flex-row items-center gap-4 border-4 border-gold shadow-lg px-4 py-2 rounded-lg hover:scale-105 transition-transform duration-300 ease-in-out font-semibold"
             href="tel:+911234123412"
           >
             <MdOutlineLocalPhone />
             +91-1234567890
           </a>
           <a
-            className="flex flex-row items-center gap-4 border-4 border-gold shadow-lg px-4 py-2 rounded-lg hover:scale-105 transition-transform duration-300 ease-in-out"
+            className="flex flex-row items-center gap-4 border-4 border-gold shadow-lg px-4 py-2 rounded-lg hover:scale-105 transition-transform duration-300 ease-in-out font-semibold"
             href="mailto:info@decamyras.com"
           >
             <MdOutlineEmail />
             info@decamyras.com
           </a>
         </div>
-        <div className="flex flex-col md:flex-row w-full gap-y-5 gap-x-10 grow pb-4 md:pb-20 px-4 md:px-20">
+        <div className="flex flex-col md:flex-row w-full gap-y-5 gap-x-10 grow pb-20 md:pb-2 px-4 h-fit md:px-20">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.4843388213676!2d78.4902006!3d17.436517399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9a1bb1955555%3A0x7ff18a28fa08c210!2sGovdan%20Group!5e0!3m2!1sen!2sin!4v1675441974338!5m2!1sen!2sin"
-            allowFullScreen=""
             loading="lazy"
-            className="w-full md:w-[40%] min-h-[40vh] md:min-h-full"
+            className="w-full md:w-[40%] min-h-[35vh] md:min-h-full"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
           <form

@@ -12,41 +12,43 @@ export default function ProductDetail() {
         <meta name="description" content="Decamyra's" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <div className="bg-bgWhite min-h-full px-4 md:px-20 flex flex-col md:flex-row gap-x-10">
-        <div className="bg-[#cccccc]/20 w-full md:w-[15%] min-h-full flex flex-col justify-center items-center gap-y-4 text-4xl">
-          <button className="rounded-md shadow-2xl px-4 py-2 text-center bg-white ease-in-out transition-transform hover:scale-[1.2] w-fit">
+      <div className="bg-bgWhite min-h-full px-4 md:px-20 flex flex-col md:flex-row gap-x-10 rounded-lg">
+        <div className="bg-[#cccccc]/20 w-full md:w-[15%] min-h-full flex flex-col justify-center items-center gap-y-4 text-xl font-bold">
+          <button className="rounded-md shadow-2xl px-8 py-2 text-center bg-white ease-in-out transition-transform hover:scale-[1.2] w-fit">
             F&amp;B Linen
           </button>
-          <button className="rounded-md shadow-2xl px-4 py-2 text-center bg-white ease-in-out transition-transform hover:scale-[1.2] w-fit">
+          <button className="rounded-md shadow-2xl px-8 py-2 text-center bg-white ease-in-out transition-transform hover:scale-[1.2] w-fit">
             F&amp;B Linen
           </button>
-          <button className="rounded-md shadow-2xl px-4 py-2 text-center bg-white ease-in-out transition-transform hover:scale-[1.2] w-fit">
+          <button className="rounded-md shadow-2xl px-8 py-2 text-center bg-white ease-in-out transition-transform hover:scale-[1.2] w-fit">
             F&amp;B Linen
           </button>
-          <button className="rounded-md shadow-2xl px-4 py-2 text-center bg-white ease-in-out transition-transform hover:scale-[1.2] w-fit">
+          <button className="rounded-md shadow-2xl px-8 py-2 text-center bg-white ease-in-out transition-transform hover:scale-[1.2] w-fit">
             F&amp;B Linen
           </button>
-          <button className="rounded-md shadow-2xl px-4 py-2 text-center bg-white ease-in-out transition-transform hover:scale-[1.2] w-fit">
+          <button className="rounded-md shadow-2xl px-8 py-2 text-center bg-white ease-in-out transition-transform hover:scale-[1.2] w-fit">
             F&amp;B Linen
           </button>
-          <button className="rounded-md shadow-2xl px-4 py-2 text-center bg-white ease-in-out transition-transform hover:scale-[1.2] w-fit">
+          <button className="rounded-md shadow-2xl px-8 py-2 text-center bg-white ease-in-out transition-transform hover:scale-[1.2] w-fit">
             F&amp;B Linen
           </button>
-          <button className="rounded-md shadow-2xl px-4 py-2 text-center bg-white ease-in-out transition-transform hover:scale-[1.2] w-fit">
+          <button className="rounded-md shadow-2xl px-8 py-2 text-center bg-white ease-in-out transition-transform hover:scale-[1.2] w-fit">
             F&amp;B Linen
           </button>
-          <button className="rounded-md shadow-2xl px-4 py-2 text-center bg-white ease-in-out transition-transform hover:scale-[1.2] w-fit">
+          <button className="rounded-md shadow-2xl px-8 py-2 text-center bg-white ease-in-out transition-transform hover:scale-[1.2] w-fit">
             F&amp;B Linen
           </button>
-          <button className="rounded-md shadow-2xl px-4 py-2 text-center bg-white ease-in-out transition-transform hover:scale-[1.2] w-fit">
+          <button className="rounded-md shadow-2xl px-8 py-2 text-center bg-white ease-in-out transition-transform hover:scale-[1.2] w-fit">
             F&amp;B Linen
           </button>
-          <button className="rounded-md shadow-2xl px-4 py-2 text-center bg-white ease-in-out transition-transform hover:scale-[1.2] w-fit">
+          <button className="rounded-md shadow-2xl px-8 py-2 text-center bg-white ease-in-out transition-transform hover:scale-[1.2] w-fit">
             F&amp;B Linen
           </button>
         </div>
         <div className="bg-white w-full md:w-[85%] min-h-full py-5">
-          <h2 className="font-bold text-center text-5xl">F&amp;B Linen</h2>
+          <h2 className="font-bold text-center text-6xl font-utsaah">
+            F&amp;B Linen
+          </h2>
           <div className="flex flex-col justify-between min-h-[93%] py-[5%]">
             <div className="flex flex-col md:flex-row gap-x-10">
               <Carousel
@@ -71,8 +73,7 @@ export default function ProductDetail() {
               </Carousel>
               <div className="md:w-1/2 min-h-full">
                 <h3 className="text-center text-3xl font-bold">All Products</h3>
-                <div className="grid grid-cols-2 gap-y-10 py-8 text-xl place-items-center">
-                  <p>Item</p>
+                <div className="grid grid-cols-3 gap-y-10 py-8 text-xl place-items-center">
                   <p>Item</p>
                   <p>Item</p>
                   <p>Item</p>
@@ -114,8 +115,124 @@ export default function ProductDetail() {
           },
         }}
       >
-        <form action="" className="grid grid-cols-3 gap-y-10 gap-x-10 text-xl">
-          Here is the form content
+        <form
+          action=""
+          className="grid grid-cols-3 text-xl place-items-center place-content-evenly gap-x-20 w-full z-20"
+        >
+          <div className="space-y-3">
+            <div className="flex flex-row gap-2">
+              <input type={"checkbox"} className="" />
+              <p>Table Cloth</p>
+            </div>
+            <div className="flex flex-row gap-2">
+              <input type={"checkbox"} className="" />
+              <p>Table Cloth</p>
+            </div>
+            <div className="flex flex-row gap-2">
+              <input type={"checkbox"} className="" />
+              <p>Table Cloth</p>
+            </div>
+            <div className="flex flex-row gap-2">
+              <input type={"checkbox"} className="" />
+              <p>Table Cloth</p>
+            </div>
+            <div className="flex flex-row gap-2">
+              <input type={"checkbox"} className="" />
+              <p>Table Cloth</p>
+            </div>
+            <div className="flex flex-row gap-2">
+              <input type={"checkbox"} className="" />
+              <p>Table Cloth</p>
+            </div>
+            <div className="flex flex-row gap-2">
+              <input type={"checkbox"} className="" />
+              <p>Table Cloth</p>
+            </div>
+            <div className="flex flex-row gap-2">
+              <input type={"checkbox"} className="" />
+              <p>Table Cloth</p>
+            </div>
+            <div className="flex flex-row gap-2">
+              <input type={"checkbox"} className="" />
+              <p>Table Cloth</p>
+            </div>
+          </div>
+          <div className="space-y-3">
+            <div className="flex flex-row gap-2">
+              <input type={"checkbox"} className="" />
+              <p>Table Cloth</p>
+            </div>
+            <div className="flex flex-row gap-2">
+              <input type={"checkbox"} className="" />
+              <p>Table Cloth</p>
+            </div>
+            <div className="flex flex-row gap-2">
+              <input type={"checkbox"} className="" />
+              <p>Table Cloth</p>
+            </div>
+            <div className="flex flex-row gap-2">
+              <input type={"checkbox"} className="" />
+              <p>Table Cloth</p>
+            </div>
+            <div className="flex flex-row gap-2">
+              <input type={"checkbox"} className="" />
+              <p>Table Cloth</p>
+            </div>
+            <div className="flex flex-row gap-2">
+              <input type={"checkbox"} className="" />
+              <p>Table Cloth</p>
+            </div>
+            <div className="flex flex-row gap-2">
+              <input type={"checkbox"} className="" />
+              <p>Table Cloth</p>
+            </div>
+            <div className="flex flex-row gap-2">
+              <input type={"checkbox"} className="" />
+              <p>Table Cloth</p>
+            </div>
+            <div className="flex flex-row gap-2">
+              <input type={"checkbox"} className="" />
+              <p>Table Cloth</p>
+            </div>
+          </div>
+          <div className="space-y-3">
+            <div className="flex flex-row gap-2">
+              <input type={"checkbox"} className="" />
+              <p>Table Cloth</p>
+            </div>
+            <div className="flex flex-row gap-2">
+              <input type={"checkbox"} className="" />
+              <p>Table Cloth</p>
+            </div>
+            <div className="flex flex-row gap-2">
+              <input type={"checkbox"} className="" />
+              <p>Table Cloth</p>
+            </div>
+            <div className="flex flex-row gap-2">
+              <input type={"checkbox"} className="" />
+              <p>Table Cloth</p>
+            </div>
+            <div className="flex flex-row gap-2">
+              <input type={"checkbox"} className="" />
+              <p>Table Cloth</p>
+            </div>
+            <div className="flex flex-row gap-2">
+              <input type={"checkbox"} className="" />
+              <p>Table Cloth</p>
+            </div>
+            <div className="flex flex-row gap-2">
+              <input type={"checkbox"} className="" />
+              <p>Table Cloth</p>
+            </div>
+            <div className="flex flex-row gap-2">
+              <input type={"checkbox"} className="" />
+              <p>Table Cloth</p>
+            </div>
+            <div className="flex flex-row gap-2">
+              <input type={"checkbox"} className="" />
+              <p>Table Cloth</p>
+            </div>
+          </div>
         </form>
       </Modal>
     </>
