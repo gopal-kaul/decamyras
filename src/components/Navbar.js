@@ -10,20 +10,20 @@ export default function Navbar({ ...props }) {
   return (
     <Fade>
       <nav
-        className="flex flex-col bg-[#1a1a1a] text-gold font-graphik z-10 py-5"
+        className="flex flex-col bg-[#1a1a1a] text-gold font-graphik z-20 py-2.5"
         {...props}
       >
         <div className="flex flex-row justify-between items-center relative px-[10%] md:px-[5%]">
           <div className="w-1/4 flex flex-row items-center gap-6 md:gap-10">
             <Image
               src={logo}
-              className="w-[10vw] lg:w-[5vw] h-auto aspect-square"
+              className="w-[10vw] md:w-[4vw] h-auto aspect-square"
             />
             <div className="">
-              <h2 className="font-artifexCF font-bold text-2xl lg:text-[2.5vw] tracking-widest leading-tight pt-2 md:pt-2">
+              <h2 className="font-artifexCF font-bold text-2xl lg:text-[2vw] tracking-widest leading-tight pt-2 md:pt-2">
                 Decamyra&apos;s
               </h2>
-              <p className="font-utsaah text-md lg:text-[1.5vw] tracking-wide text-white/80">
+              <p className="font-utsaah text-md lg:text-[1.4vw] tracking-wide text-white/80">
                 A Luxury Living
               </p>
             </div>
@@ -115,9 +115,10 @@ export default function Navbar({ ...props }) {
               `}
             </style>
             <ul
+              onClick={() => setMenu(false)}
               className={`${
                 menu ? "flex" : "hidden"
-              } flex-col items-start uppercase font-utsaah text-2xl lg:text-[1.6vw] gap-8 absolute top-full pt-[10%] left-0 w-screen bg-[#1a1a1a] h-screen pl-[13%]`}
+              } flex-col items-start uppercase font-utsaah text-2xl lg:text-[1.6vw] gap-8 absolute top-full pt-[10%] left-0 w-screen bg-[#1a1a1a] h-screen pl-[13%] z-50`}
             >
               <Navlinks />
             </ul>
