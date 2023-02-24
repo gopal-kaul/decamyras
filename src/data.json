@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "name": "Bed Linen",
+      "coverImage": "towel.jpg"
+    },
+    {
+      "name": "Bath Linen",
+      "coverImage": "towel.jpg"
+    },
+    {
+      "name": "F&B Linen",
+      "coverImage": "towel.jpg"
+    },
+    {
+      "name": "Drapes and Upholstery",
+      "coverImage": "towel.jpg"
+    },
+    {
+      "name": "Spa & Pool",
+      "coverImage": "towel.jpg"
+    }
+  ]
+}
