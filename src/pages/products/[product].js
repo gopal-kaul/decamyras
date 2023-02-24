@@ -4,6 +4,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import Modal from "react-modal";
 import data from "@/data.json";
+import Link from "next/link";
 
 export async function getStaticPaths() {
   const paths = data.products.map((product) => ({
@@ -37,36 +38,22 @@ export default function ProductDetail({ product }) {
       </Head>
       <div className="bg-bgWhite min-h-full px-4 md:px-20 flex flex-col md:flex-row gap-x-10 rounded-lg">
         <div className="bg-[#cccccc]/20 w-full md:w-[15%] min-h-full flex flex-col justify-center items-center gap-y-4 text-xl font-bold">
-          <button className="rounded-md shadow-2xl px-8 py-2 text-center bg-white ease-in-out transition-transform hover:scale-[1.2] w-fit">
-            F&amp;B Linen
-          </button>
-          <button className="rounded-md shadow-2xl px-8 py-2 text-center bg-white ease-in-out transition-transform hover:scale-[1.2] w-fit">
-            F&amp;B Linen
-          </button>
-          <button className="rounded-md shadow-2xl px-8 py-2 text-center bg-white ease-in-out transition-transform hover:scale-[1.2] w-fit">
-            F&amp;B Linen
-          </button>
-          <button className="rounded-md shadow-2xl px-8 py-2 text-center bg-white ease-in-out transition-transform hover:scale-[1.2] w-fit">
-            F&amp;B Linen
-          </button>
-          <button className="rounded-md shadow-2xl px-8 py-2 text-center bg-white ease-in-out transition-transform hover:scale-[1.2] w-fit">
-            F&amp;B Linen
-          </button>
-          <button className="rounded-md shadow-2xl px-8 py-2 text-center bg-white ease-in-out transition-transform hover:scale-[1.2] w-fit">
-            F&amp;B Linen
-          </button>
-          <button className="rounded-md shadow-2xl px-8 py-2 text-center bg-white ease-in-out transition-transform hover:scale-[1.2] w-fit">
-            F&amp;B Linen
-          </button>
-          <button className="rounded-md shadow-2xl px-8 py-2 text-center bg-white ease-in-out transition-transform hover:scale-[1.2] w-fit">
-            F&amp;B Linen
-          </button>
-          <button className="rounded-md shadow-2xl px-8 py-2 text-center bg-white ease-in-out transition-transform hover:scale-[1.2] w-fit">
-            F&amp;B Linen
-          </button>
-          <button className="rounded-md shadow-2xl px-8 py-2 text-center bg-white ease-in-out transition-transform hover:scale-[1.2] w-fit">
-            F&amp;B Linen
-          </button>
+          {data.products
+            .filter(
+              (prod) =>
+                prod.name.replace(" ", "-").toLowerCase() !==
+                product.name.replace(" ", "-").toLowerCase()
+            )
+            .map((product) => (
+              <Link
+                href={`/products/${product.name
+                  .replace(" ", "-")
+                  .toLowerCase()}`}
+                className="rounded-md shadow-2xl px-8 py-2 text-center bg-white ease-in-out transition-transform hover:scale-[1.2] w-fit mx-[15%]"
+              >
+                {product.name}
+              </Link>
+            ))}
         </div>
         <div className="bg-white w-full md:w-[85%] min-h-full py-5">
           <h2 className="font-bold text-center text-6xl font-utsaah">
@@ -132,9 +119,11 @@ export default function ProductDetail({ product }) {
             bottom: "auto",
             marginRight: "-50%",
             transform: "translate(-50%, -50%)",
+            borderRadius: "8px",
           },
           overlay: {
-            backdropFilter: "blur(4px)",
+            backdropFilter: "blur(15px)",
+            zIndex: "10",
           },
         }}
       >
