@@ -3,7 +3,30 @@ import { useState } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import Modal from "react-modal";
-export default function ProductDetail() {
+import data from "@/data.json";
+
+export async function getStaticPaths() {
+  const paths = data.products.map((product) => ({
+    params: { product: product.name.replace(" ", "-").toLowerCase() },
+  }));
+  return {
+    paths,
+    fallback: false,
+  };
+}
+
+export async function getStaticProps(context) {
+  const product = data.products.find(
+    (product) =>
+      product.name.replace(" ", "-").toLowerCase() === context.params.product
+  );
+  return {
+    props: { product },
+  };
+}
+
+export default function ProductDetail({ product }) {
+  console.log(product);
   const [modal, setModal] = useState(false);
   return (
     <>
@@ -47,7 +70,7 @@ export default function ProductDetail() {
         </div>
         <div className="bg-white w-full md:w-[85%] min-h-full py-5">
           <h2 className="font-bold text-center text-6xl font-utsaah">
-            F&amp;B Linen
+            {product.name}
           </h2>
           <div className="flex flex-col justify-between min-h-[93%] py-[5%]">
             <div className="flex flex-col md:flex-row gap-x-10">
