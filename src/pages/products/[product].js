@@ -46,9 +46,8 @@ export default function ProductDetail({ product }) {
             )
             .map((prod) => (
               <Link
-                href={`/products/${prod.name
-                  .replace(" ", "-")
-                  .toLowerCase()}`}
+                key={prod.name}
+                href={`/products/${prod.name.replace(" ", "-").toLowerCase()}`}
                 className="rounded-md shadow-2xl px-8 py-2 text-center bg-white ease-in-out transition-transform hover:scale-[1.2] w-fit mx-[15%]"
               >
                 {prod.name}
