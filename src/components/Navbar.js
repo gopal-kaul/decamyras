@@ -1,5 +1,4 @@
 import Image from "next/image";
-import ActiveLink from "./ActiveLink";
 import { Fade } from "react-reveal";
 import logo from "../../public/logo.png";
 import { useState } from "react";
