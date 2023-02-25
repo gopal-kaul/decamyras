@@ -85,6 +85,7 @@ export default function ContactUs() {
               </label>
               <Select
                 isMulti
+                closeMenuOnSelect={false}
                 theme={(theme) => ({
                   ...theme,
                   borderRadius: 0,
