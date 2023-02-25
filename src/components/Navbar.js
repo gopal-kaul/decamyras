@@ -27,7 +27,7 @@ export default function Navbar({ ...props }) {
               </p>
             </div>
           </div>
-          <div className="md:hidden">
+          <div className="md:hidden z-50">
             <div
               id="nav-icon"
               className={menu ? "open" : ""}
