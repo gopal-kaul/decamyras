@@ -19,6 +19,22 @@
     {
       "name": "Spa & Pool",
       "coverImage": "towel.jpg"
+    },
+    {
+      "name": "Furnishings",
+      "coverImage": "towel.jpg"
+    },
+    {
+      "name": "Flatware",
+      "coverImage": "towel.jpg"
+    },
+    {
+      "name": "Glassware",
+      "coverImage": "towel.jpg"
+    },
+    {
+      "name": "Kitchen Equipment",
+      "coverImage": "towel.jpg"
     }
   ]
 }
