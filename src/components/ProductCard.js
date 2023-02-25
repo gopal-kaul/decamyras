@@ -16,10 +16,9 @@ export default function ProductCard({ product }) {
       }}
       onClick={(e) => {
         e.preventDefault();
-	if(e.target===e.currentTarget)
-        setFlipped((old) => !old);
+        if (e.target === e.currentTarget) setFlipped((old) => !old);
       }}
-      className="shadow-xl rounded-3xl w-full sm:w-1/3 md:w-1/4 lg:w-1/6"
+      className="shadow-xl rounded-3xl w-full sm:w-1/3 md:w-1/4 lg:w-1/6 cursor-pointer"
     >
       <ReactCardFlip isFlipped={flipped}>
         <div className="relative">
