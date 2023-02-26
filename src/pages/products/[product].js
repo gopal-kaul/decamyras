@@ -131,123 +131,76 @@ export default function ProductDetail({ product }) {
         >
           x
         </button>
-        <form
-          action=""
-          className="grid grid-cols-3 text-xl place-items-center place-content-evenly gap-x-20 w-full z-20"
-        >
-          <div className="space-y-3">
+        <div className="grid place-content-center place-items-start">
+          <div className="text-2xl font-bold">Send an Enquiry</div>
+          <div className="w-1/2 h-1 bg-gold" />
+        </div>
+        <form action="" className="text-xl w-full z-20 pt-5">
+          <div className="grid grid-cols-3 gap-x-10 gap-y-4">
             <div className="flex flex-row gap-2">
-              <input type={"checkbox"} className="" />
+              <input name="tablecloth" type={"checkbox"} className="" />
               <p>Table Cloth</p>
             </div>
             <div className="flex flex-row gap-2">
-              <input type={"checkbox"} className="" />
+              <input name="tablecloth" type={"checkbox"} className="" />
               <p>Table Cloth</p>
             </div>
             <div className="flex flex-row gap-2">
-              <input type={"checkbox"} className="" />
+              <input name="tablecloth" type={"checkbox"} className="" />
               <p>Table Cloth</p>
             </div>
             <div className="flex flex-row gap-2">
-              <input type={"checkbox"} className="" />
+              <input name="tablecloth" type={"checkbox"} className="" />
               <p>Table Cloth</p>
             </div>
             <div className="flex flex-row gap-2">
-              <input type={"checkbox"} className="" />
+              <input name="tablecloth" type={"checkbox"} className="" />
               <p>Table Cloth</p>
             </div>
             <div className="flex flex-row gap-2">
-              <input type={"checkbox"} className="" />
-              <p>Table Cloth</p>
-            </div>
-            <div className="flex flex-row gap-2">
-              <input type={"checkbox"} className="" />
-              <p>Table Cloth</p>
-            </div>
-            <div className="flex flex-row gap-2">
-              <input type={"checkbox"} className="" />
-              <p>Table Cloth</p>
-            </div>
-            <div className="flex flex-row gap-2">
-              <input type={"checkbox"} className="" />
+              <input name="tablecloth" type={"checkbox"} className="" />
               <p>Table Cloth</p>
             </div>
           </div>
-          <div className="space-y-3">
-            <div className="flex flex-row gap-2">
-              <input type={"checkbox"} className="" />
-              <p>Table Cloth</p>
+          <div className="flex flex-col pt-4 gap-4">
+            <div className="flex flex-row gap-4">
+              <label htmlFor="name">Name</label>
+              <input
+                placeholder="John Doe"
+                name="name"
+                required
+                type={"text"}
+                className="border-b border-b-gold focus:outline-none"
+              />
             </div>
-            <div className="flex flex-row gap-2">
-              <input type={"checkbox"} className="" />
-              <p>Table Cloth</p>
+            <div className="flex flex-row gap-4">
+              <label htmlFor="email">Email</label>
+              <input
+                placeholder="user@email.com"
+                name="email"
+                type={"email"}
+                required
+                className="border-b border-b-gold focus:outline-none"
+              />
             </div>
-            <div className="flex flex-row gap-2">
-              <input type={"checkbox"} className="" />
-              <p>Table Cloth</p>
-            </div>
-            <div className="flex flex-row gap-2">
-              <input type={"checkbox"} className="" />
-              <p>Table Cloth</p>
-            </div>
-            <div className="flex flex-row gap-2">
-              <input type={"checkbox"} className="" />
-              <p>Table Cloth</p>
-            </div>
-            <div className="flex flex-row gap-2">
-              <input type={"checkbox"} className="" />
-              <p>Table Cloth</p>
-            </div>
-            <div className="flex flex-row gap-2">
-              <input type={"checkbox"} className="" />
-              <p>Table Cloth</p>
-            </div>
-            <div className="flex flex-row gap-2">
-              <input type={"checkbox"} className="" />
-              <p>Table Cloth</p>
-            </div>
-            <div className="flex flex-row gap-2">
-              <input type={"checkbox"} className="" />
-              <p>Table Cloth</p>
+            <div className="flex flex-row gap-4">
+              <label htmlFor="email">Phone</label>
+              <input
+                placeholder="+91-1234567890"
+                name="phone"
+                required
+                type={"text"}
+                className="border-b border-b-gold focus:outline-none"
+              />
             </div>
           </div>
-          <div className="space-y-3">
-            <div className="flex flex-row gap-2">
-              <input type={"checkbox"} className="" />
-              <p>Table Cloth</p>
-            </div>
-            <div className="flex flex-row gap-2">
-              <input type={"checkbox"} className="" />
-              <p>Table Cloth</p>
-            </div>
-            <div className="flex flex-row gap-2">
-              <input type={"checkbox"} className="" />
-              <p>Table Cloth</p>
-            </div>
-            <div className="flex flex-row gap-2">
-              <input type={"checkbox"} className="" />
-              <p>Table Cloth</p>
-            </div>
-            <div className="flex flex-row gap-2">
-              <input type={"checkbox"} className="" />
-              <p>Table Cloth</p>
-            </div>
-            <div className="flex flex-row gap-2">
-              <input type={"checkbox"} className="" />
-              <p>Table Cloth</p>
-            </div>
-            <div className="flex flex-row gap-2">
-              <input type={"checkbox"} className="" />
-              <p>Table Cloth</p>
-            </div>
-            <div className="flex flex-row gap-2">
-              <input type={"checkbox"} className="" />
-              <p>Table Cloth</p>
-            </div>
-            <div className="flex flex-row gap-2">
-              <input type={"checkbox"} className="" />
-              <p>Table Cloth</p>
-            </div>
+          <div className="grid place-items-center mt-4">
+            <button
+              type="submit"
+              className="uppercase bg-gold text-gray transition-[padding] duration-300 ease-in-out w-fit px-10 hover:px-14 font-bold py-2"
+            >
+              Submit
+            </button>
           </div>
         </form>
       </Modal>
