@@ -24,7 +24,7 @@ export default function AboutUs() {
           <Marquee
             speed={"50"}
             gradient={false}
-            className="bg-black py-10 rounded-lg"
+            className="bg-black py-10 rounded-full"
           >
             <div className="flex flex-row gap-10">
               <img src="/carousel/1.jpg" className="object-cover h-[10vh]" />
