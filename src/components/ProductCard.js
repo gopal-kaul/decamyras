@@ -43,10 +43,7 @@ export default function ProductCard({ product }) {
                   {product.name}
                 </h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatem officiis culpa porro facilis, voluptas, ea nihil
-                  ad, tempore totam corporis omnis expedita deleniti enim dolor?
-                  Sint nulla molestiae at! Eveniet?
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, veritatis!
                 </p>
               </div>
               <div className="grid place-items-center">
