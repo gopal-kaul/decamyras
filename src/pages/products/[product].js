@@ -135,7 +135,13 @@ export default function ProductDetail({ product }) {
           <div className="text-2xl font-bold">Send an Enquiry</div>
           <div className="w-1/2 h-1 bg-gold" />
         </div>
-        <form action="" className="text-xl w-full z-20 pt-5">
+        <form
+          action=""
+          onSubmit={() => {
+            setModal(false);
+          }}
+          className="text-xl w-full z-20 pt-5"
+        >
           <div className="grid grid-cols-3 gap-x-10 gap-y-4">
             <div className="flex flex-row gap-2">
               <input name="tablecloth" type={"checkbox"} className="" />
