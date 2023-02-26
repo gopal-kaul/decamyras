@@ -44,7 +44,9 @@ export default function ProductDetail({ product }) {
               href={`/products/${prod.name.replace(" ", "-").toLowerCase()}`}
               className={`rounded-md shadow-2xl px-8 py-2 text-center bg-white ease-in-out transition-transform hover:scale-[1.2] w-fit mx-[10%] ${
                 prod.name.replace(" ", "-").toLowerCase() ===
-                product.name.replace(" ", "-").toLowerCase() ?"border-4 border-gold" :""
+                product.name.replace(" ", "-").toLowerCase()
+                  ? "border-4 border-gold"
+                  : ""
               }`}
             >
               {prod.name}
@@ -123,6 +125,12 @@ export default function ProductDetail({ product }) {
           },
         }}
       >
+        <button
+          onClick={() => setModal(false)}
+          className="absolute top-0 right-1"
+        >
+          x
+        </button>
         <form
           action=""
           className="grid grid-cols-3 text-xl place-items-center place-content-evenly gap-x-20 w-full z-20"
