@@ -56,7 +56,6 @@ export default function AboutUs() {
                 right: "auto",
                 bottom: "auto",
                 transform: "translate(-50%, -50%)",
-                borderRadius: "8px",
               },
               overlay: {
                 backdropFilter: "blur(15px)",
@@ -94,9 +93,9 @@ export default function AboutUs() {
             </p>
             <button
               onClick={() => setCompany(false)}
-              className="absolute top-0 right-2 p-0"
+              className="absolute top-1 right-2 p-0"
             >
-              x
+              X
             </button>
           </Modal>
           <Modal
@@ -110,7 +109,6 @@ export default function AboutUs() {
                 right: "auto",
                 bottom: "auto",
                 transform: "translate(-50%, -50%)",
-                borderRadius: "8px",
                 display: "relative",
               },
               overlay: {
@@ -173,9 +171,9 @@ export default function AboutUs() {
             </div>
             <button
               onClick={() => setTeam(false)}
-              className="absolute top-0 right-2 p-0"
+              className="absolute top-1 right-2 p-0"
             >
-              x
+              X
             </button>
           </Modal>
         </div>
