@@ -23,11 +23,11 @@ export default function Home() {
         </div>
         <div className="absolute top-0 left-0 w-full h-full bg-opacity-60 bg-[#000000] grid place-items-center text-white">
           <div className="grid place-items-center">
-            <img src="/logo.png" className="w-40" />
-            <h2 className="font-artifexCF font-bold text-4xl text-center lg:text-7xl tracking-widest leading-tight pt-2 md:pt-2 text-gold">
+            <img src="/logo.png" className="w-32" />
+            <h2 className="font-artifexCF font-bold text-4xl text-center lg:text-6xl tracking-widest leading-tight pt-2 md:pt-2 text-gold">
               Decamyra&apos;s
             </h2>
-            <p className="font-utsaah text-xl text-center lg:text-6xl tracking-wide text-white pt-2 md:pt-10 pb-5 font-semibold">
+            <p className="font-utsaah text-xl text-center lg:text-5xl tracking-wide text-white pt-2 md:pt-10 pb-5 font-semibold">
               A Luxury Linen and Hospitality Solution
             </p>
             <Link
