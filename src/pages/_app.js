@@ -68,7 +68,11 @@ export default function App({ Component, pageProps }) {
     <div
       className={`${artifexCF.variable} ${utsaah.variable} ${quicksand.variable} font-sans scroll-smooth w-screen h-screen overflow-hidden bg-[#1a1a1a]`}
     >
-      <Navbar />
+      <div className="relative z-[1000]">
+        <div className="sticky w-full h-full top-0 left-0">
+          <Navbar />
+        </div>
+      </div>
       <main
         ref={ref}
         className={`overflow-y-scroll w-full px-4 font-quicksand`}
