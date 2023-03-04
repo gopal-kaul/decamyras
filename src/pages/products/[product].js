@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export async function getStaticPaths() {
   const paths = data.products.map((product) => ({
-    params: { product: product.name.replace(" ", "-").toLowerCase() },
+    params: { product: product.name.replaceAll(" ", "-").toLowerCase() },
   }));
   return {
     paths,
@@ -19,7 +19,7 @@ export async function getStaticPaths() {
 export async function getStaticProps(context) {
   const product = data.products.find(
     (product) =>
-      product.name.replace(" ", "-").toLowerCase() === context.params.product
+      product.name.replaceAll(" ", "-").toLowerCase() === context.params.product
   );
   return {
     props: { product },
@@ -41,10 +41,10 @@ export default function ProductDetail({ product }) {
           {data.products.map((prod) => (
             <Link
               key={prod.name}
-              href={`/products/${prod.name.replace(" ", "-").toLowerCase()}`}
+              href={`/products/${prod.name.replaceAll(" ", "-").toLowerCase()}`}
               className={`rounded-md shadow-2xl px-8 py-2 text-center bg-white ease-in-out transition-transform hover:scale-[1.2] w-fit mx-[10%] ${
-                prod.name.replace(" ", "-").toLowerCase() ===
-                product.name.replace(" ", "-").toLowerCase()
+                prod.name.replaceAll(" ", "-").toLowerCase() ===
+                product.name.replaceAll(" ", "-").toLowerCase()
                   ? "border-4 border-gold"
                   : ""
               }`}
