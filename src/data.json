@@ -23,18 +23,6 @@
     {
       "name": "Furnishings",
       "coverImage": "furnituremain.jpg"
-    },
-    {
-      "name": "Flatware",
-      "coverImage": "towel.jpg"
-    },
-    {
-      "name": "Glassware",
-      "coverImage": "towel.jpg"
-    },
-    {
-      "name": "Kitchen Equipment",
-      "coverImage": "towel.jpg"
     }
   ]
 }
