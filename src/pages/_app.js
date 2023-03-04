@@ -66,7 +66,7 @@ export default function App({ Component, pageProps }) {
   }, []);
   return (
     <div
-      className={`${artifexCF.variable} ${utsaah.variable} ${quicksand.variable} font-sans scroll-smooth w-screen h-screen overflow-hidden bg-[#1a1a1a]`}
+      className={`${artifexCF.variable} ${utsaah.variable} font-sans scroll-smooth w-screen h-screen overflow-hidden bg-[#1a1a1a]`}
     >
       <div className="relative z-[1000]">
         <div className="sticky w-full h-full top-0 left-0">
@@ -75,7 +75,7 @@ export default function App({ Component, pageProps }) {
       </div>
       <main
         ref={ref}
-        className={`overflow-y-scroll w-full px-4 font-quicksand`}
+        className={`overflow-y-scroll w-full px-4 font-serif`}
       >
         <Component {...pageProps} />
       </main>
