@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 export default function Home() {
   return (
     <>
@@ -9,18 +11,19 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <div className="rounded-lg h-full relative flex flex-row flex-wrap overflow-hidden">
-        <div className="w-full md:w-1/2 h-1/4 md:h-1/2 inline-block">
-          <img src="/home/1.jpg" className="object-cover w-full h-full" />
-        </div>
-        <div className="w-full md:w-1/2 h-1/4 md:h-1/2 inline-block">
-          <img src="/home/2.jpg" className="object-cover h-full w-full" />
-        </div>
-        <div className="w-full md:w-1/2 h-1/4 md:h-1/2 inline-block">
-          <img src="/home/3.jpg" className="object-cover h-full w-full" />
-        </div>
-        <div className="w-full md:w-1/2 h-1/4 md:h-1/2 inline-block">
-          <img src="/home/4.jpg" className="object-cover h-full w-full" />
-        </div>
+        <Carousel
+          transitionTime={1500}
+          showThumbs={false}
+          autoPlay
+          infiniteLoop
+          interval={2500}
+          showStatus={false}
+        >
+          <img src="/home/1.jpg" />
+          <img src="/home/2.jpg" />
+          <img src="/home/3.jpg" />
+          <img src="/home/4.jpg" />
+        </Carousel>
         <div className="absolute top-0 left-0 w-full h-full bg-opacity-60 bg-[#000000] grid place-items-center text-white">
           <div className="grid place-items-center">
             <img src="/logo.png" className="w-32" />
@@ -28,7 +31,7 @@ export default function Home() {
               Decamyra&apos;s
             </h2>
             <p className="font-utsaah text-xl text-center lg:text-5xl tracking-wide text-white pt-2 md:pt-10 pb-10 font-semibold">
-              A Luxury Linen and Hospitality Solution
+              A Complete Linen Solution
             </p>
             <Link
               href="/products"
