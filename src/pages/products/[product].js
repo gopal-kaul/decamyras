@@ -79,8 +79,8 @@ export default function ProductDetail({ product }) {
                   />
                 </div>
               </Carousel>
-              <div className="md:w-1/2 min-h-full">
-                <h3 className="text-center text-3xl font-bold">All Products</h3>
+              <div className="md:w-1/2 min-h-full bg-white shadow-2xl rounded-xl">
+                <h3 className="text-center text-3xl font-bold pt-5">All Products</h3>
                 <div className="grid grid-cols-3 gap-y-10 py-8 text-xl place-items-center">
                   <p>Item</p>
                   <p>Item</p>
