@@ -21,20 +21,20 @@ export default function ProductCard({ product }) {
       className="shadow-xl rounded-3xl w-full sm:w-1/3 md:w-1/4 lg:w-1/6 cursor-pointer"
     >
       <ReactCardFlip isFlipped={flipped}>
-        <div className="relative">
+        <div className="relative h-[40vh]">
           <img
             src={`/products/${product.coverImage}`}
-            className="object-cover z-10 rounded-3xl"
+            className="object-cover w-full h-[40vh] z-10 rounded-3xl"
           />
           <div className="absolute bottom-0 left-0 w-full text-center rounded-3xl bg-opacity-50 bg-cardWhite">
             <h2 className="font-bold py-1 text-xl">{product.name}</h2>
           </div>
         </div>
-        <div className="bg-white w-full h-full rounded-3xl border border-gold">
+        <div className="bg-white w-full h-[40vh] rounded-3xl border border-gold">
           <div className="relative">
             <img
               src={`/products/${product.coverImage}`}
-              className="object-cover z-10 rounded-3xl opacity-0"
+              className="object-cover z-10 rounded-3xl h-[40vh] opacity-0"
             />
 
             <div className="absolute top-0 left-0 py-[10%] px-[10%] flex flex-col h-full justify-between">
@@ -43,12 +43,13 @@ export default function ProductCard({ product }) {
                   {product.name}
                 </h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, veritatis!
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Error, veritatis!
                 </p>
               </div>
               <div className="grid place-items-center">
                 <Link
-                  className="uppercase bg-gold text-gray transition-[padding] duration-300 ease-in-out w-fit px-10 hover:px-14 font-bold py-2"
+                  className="uppercase bg-gold text-gray transition-[padding] duration-300 ease-in-out w-fit px-10 hover:px-14 font-bold py-2 rounded-md"
                   href={`/products/${product.name
                     .replace(" ", "-")
                     .toLowerCase()}`}
