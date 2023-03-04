@@ -46,7 +46,25 @@ export default function ContactUs() {
                     placeholder="John Doe"
                     type="text"
                     name="name"
-                    className="focus:outline-none ring-2 focus:ring-4 ring-gold px-1 py-1 w-full rounded-md"
+                    className="focus:outline-none ring-2 focus:ring-4 ring-gold px-2 py-1 w-full rounded-md"
+                  />
+                </div>
+                <div className="flex flex-col gap-3">
+                  <label className="font-bold text-white">Organization</label>
+                  <input
+                    placeholder="Company"
+                    type="text"
+                    name="organization"
+                    className="focus:outline-none ring-2 focus:ring-4 ring-gold px-2 py-1 w-full rounded-md"
+                  />
+                </div>
+                <div className="flex flex-col gap-3">
+                  <label className="font-bold text-white">Location</label>
+                  <input
+                    placeholder="Location"
+                    type="text"
+                    name="location"
+                    className="focus:outline-none ring-2 focus:ring-4 ring-gold px-2 py-1 w-full rounded-md"
                   />
                 </div>
                 <div className="flex flex-col gap-3">
@@ -55,7 +73,7 @@ export default function ContactUs() {
                     placeholder="+91-1234567890"
                     type="text"
                     name="phone"
-                    className="focus:outline-none ring-2 focus:ring-4 ring-gold px-1 py-1 w-full rounded-lg"
+                    className="focus:outline-none ring-2 focus:ring-4 ring-gold px-2 py-1 w-full rounded-lg"
                   />
                 </div>
 
@@ -65,7 +83,7 @@ export default function ContactUs() {
                     placeholder="johndoe@gmail.com"
                     type="email"
                     name="email"
-                    className="focus:outline-none ring-2 focus:ring-4 ring-gold px-1 py-1 w-full rounded-lg"
+                    className="focus:outline-none ring-2 focus:ring-4 ring-gold px-2 py-1 w-full rounded-lg"
                   />
                 </div>
               </div>
@@ -75,7 +93,7 @@ export default function ContactUs() {
                 </label>
                 <textarea
                   name="info"
-                  className="focus:outline-none ring-2 focus:ring-4 ring-gold px-1 py-1 w-full rounded-lg min-h-[85%]"
+                  className="focus:outline-none ring-2 focus:ring-4 ring-gold px-2 py-1 w-full rounded-lg min-h-[85%]"
                 />
               </div>
             </div>
@@ -108,7 +126,7 @@ export default function ContactUs() {
             <div className="grid place-items-center">
               <button
                 type="submit"
-                className="uppercase bg-gold text-gray transition-[padding] duration-300 ease-in-out w-fit px-10 hover:px-14 font-bold py-2"
+                className="uppercase bg-gold text-gray transition-[padding] duration-300 ease-in-out w-fit px-10 hover:px-14 font-bold py-2 rounded-md"
               >
                 Submit
               </button>
