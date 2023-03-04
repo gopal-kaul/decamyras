@@ -16,13 +16,16 @@ export default function Home() {
           showThumbs={false}
           autoPlay
           infiniteLoop
+          className="h-full"
           interval={2500}
+          dynamicHeight={true}
+          showArrows={false}
           showStatus={false}
         >
-          <img src="/home/1.jpg" />
-          <img src="/home/2.jpg" />
-          <img src="/home/3.jpg" />
-          <img src="/home/4.jpg" />
+          <img src="/home/1.jpg" className="h-full w-full object-cover" />
+          <img src="/home/2.jpg" className="h-full w-full object-cover" />
+          <img src="/home/3.jpg" className="h-full w-full object-cover" />
+          <img src="/home/4.jpg" className="h-full w-full object-cover" />
         </Carousel>
         <div className="absolute top-0 left-0 w-full h-full bg-opacity-60 bg-[#000000] grid place-items-center text-white">
           <div className="grid place-items-center">
