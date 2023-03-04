@@ -5,7 +5,6 @@ export default function Navlinks() {
     <>
       <ActiveLink href="/">home</ActiveLink>
       <ActiveLink href="/products">products</ActiveLink>
-      <ActiveLink href="/services">services</ActiveLink>
       <ActiveLink href="/aboutus">about us</ActiveLink>
       <ActiveLink href="/contactus">contact us</ActiveLink>
     </>
