@@ -2,11 +2,11 @@
   "products": [
     {
       "name": "Bed Linen",
-      "coverImage": "towel.jpg"
+      "coverImage": "bedlinenmain.jpg"
     },
     {
       "name": "Bath Linen",
-      "coverImage": "towel.jpg"
+      "coverImage": "bathlinenmain.jpg"
     },
     {
       "name": "F&B Linen",
@@ -14,7 +14,7 @@
     },
     {
       "name": "Drapes and Upholstery",
-      "coverImage": "towel.jpg"
+      "coverImage": "upholsteryanddrapesmain.jpg"
     },
     {
       "name": "Spa & Pool",
@@ -22,7 +22,7 @@
     },
     {
       "name": "Furnishings",
-      "coverImage": "towel.jpg"
+      "coverImage": "furnituremain.jpg"
     },
     {
       "name": "Flatware",
