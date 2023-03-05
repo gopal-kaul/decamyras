@@ -8,7 +8,7 @@ export default function AboutUs() {
         <meta name="description" content="Decamyra's" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <div className="bg-bgWhite min-h-full grid place-items-center px-4 md:px-20 rounded-lg">
+      <div className="bg-bgWhite min-h-full grid place-items-center gap-y-10 md:gap-y-0 px-4 md:px-20 rounded-lg">
         <div className="w-full shadow-lg md:shadow-2xl py-10 rounded-2xl hover:scale-105 transition-all duration-300 ease-in-out hover:border-4 border-gold px-5">
           <h2 className="font-bold text-3xl">Our Company</h2>
           <div className="bg-gold w-20 h-1 mt-1 mb-3"></div>
@@ -25,8 +25,8 @@ export default function AboutUs() {
             Our Clientele
           </h2>
           <Marquee
-            className="bg-black py-10"
-            height="400px"
+            className="bg-black md:py-10"
+            height="300px"
             width="100%"
             reverse={true}
             align="center"
