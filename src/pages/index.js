@@ -22,9 +22,7 @@ export default function Home() {
           speed={3000}
           pagination={{ clickable: false }}
           slidesPerView={1}
-          loopedSlides={4}
           loop={true}
-          showsPagination={false}
         >
           <SwiperSlide>
             <img src="/home/1.jpg" className="h-full w-full object-cover" />
