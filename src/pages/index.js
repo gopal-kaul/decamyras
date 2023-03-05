@@ -22,6 +22,8 @@ export default function Home() {
           speed={3000}
           pagination={{ clickable: false }}
           slidesPerView={1}
+          loopedSlides={4}
+          loop={true}
           showsPagination={false}
         >
           <SwiperSlide>
