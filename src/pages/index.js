@@ -19,6 +19,7 @@ export default function Home() {
           autoplay={{ delay: 1500, disableOnInteraction: false }}
           navigation={false}
           centeredSlides={true}
+          speed={3000}
           pagination={{ clickable: false }}
           slidesPerView={1}
           showsPagination={false}
