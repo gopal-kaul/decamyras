@@ -1,7 +1,10 @@
 import Head from "next/head";
 import Link from "next/link";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation, Pagination } from "swiper";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "swiper/css";
 export default function Home() {
   return (
     <>
@@ -11,23 +14,29 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <div className="rounded-lg h-full relative flex flex-row flex-wrap overflow-hidden">
-        <Carousel
-          transitionTime={1500}
-          showThumbs={false}
-          autoPlay
-          infiniteLoop
-          className="h-full"
-          interval={2500}
-          dynamicHeight={true}
-          showArrows={false}
-          showStatus={false}
+        <Swiper
+          modules={[Autoplay, Pagination, Navigation]}
+          autoplay={{ delay: 1500, disableOnInteraction: false }}
+          navigation={false}
+          centeredSlides={true}
+          pagination={{ clickable: false }}
+          slidesPerView={1}
+          showsPagination={false}
         >
-          <img src="/home/1.jpg" className="h-full w-full object-cover" />
-          <img src="/home/2.jpg" className="h-full w-full object-cover" />
-          <img src="/home/3.jpg" className="h-full w-full object-cover" />
-          <img src="/home/4.jpg" className="h-full w-full object-cover" />
-        </Carousel>
-        <div className="absolute top-0 left-0 w-full h-full bg-opacity-60 bg-[#000000] grid place-items-center text-white">
+          <SwiperSlide>
+            <img src="/home/1.jpg" className="h-full w-full object-cover" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="/home/2.jpg" className="h-full w-full object-cover" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="/home/3.jpg" className="h-full w-full object-cover" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="/home/4.jpg" className="h-full w-full object-cover" />
+          </SwiperSlide>
+        </Swiper>
+        <div className="absolute top-0 left-0 w-full h-full bg-opacity-60 bg-[#000000] grid place-items-center text-white z-10">
           <div className="grid place-items-center">
             <img src="/logo.png" className="w-32" />
             <h2 className="font-artifexCF font-bold text-4xl text-center lg:text-6xl tracking-widest leading-tight pt-2 md:pt-2 text-gold">
@@ -52,6 +61,13 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <style jsx global>
+        {`
+          .swiper-pagination-bullets {
+            display: none;
+          }
+        `}
+      </style>
     </>
   );
 }
