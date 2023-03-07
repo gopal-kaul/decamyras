@@ -2,27 +2,117 @@
   "products": [
     {
       "name": "Bed Linen",
-      "coverImage": "bedlinenmain.jpg"
+      "coverImage": "bedlinenmain.jpg",
+      "items": [
+        "Bed",
+        "Bed Sheet",
+        "Pillow",
+        "Pillow Cover",
+        "Pillow Protector",
+        "Bolster",
+        "Bolster Cover",
+        "Duvet ",
+        "Duvet Cover",
+        "Mattress ",
+        "Mattress Protector",
+        "Bed Runner",
+        "Bed Cushion",
+        "Bed Cushion Cover",
+        "Bolster",
+        "Bolster Cover",
+        "Bed Skirting/ Frills",
+        "Head Board Upholstery",
+        "Leather Head Board",
+        "Bed Side Mat/ Carpet"
+      ]
     },
     {
       "name": "Bath Linen",
-      "coverImage": "bathlinenmain.jpg"
+      "coverImage": "bathlinenmain.jpg",
+      "items": [
+        "Bath Towel",
+        "Bath Sheet",
+        "Bath Robe",
+        "Hand Towel",
+        "Face Towel",
+        "Bathroom Slippers",
+        "Bath Mat",
+        "Bath Rugs",
+        "Toiletries"
+      ]
     },
     {
       "name": "F&B Linen",
-      "coverImage": "towel.jpg"
+      "coverImage": "towel.jpg",
+      "items": [
+        "Table Cloth",
+        "Moulton Cloth",
+        "Table Runner",
+        "Napron ",
+        "Table Napkin",
+        "Cocktail Napkins",
+        "Serviette",
+        "Waiter Cloth ",
+        "Wiping Cloth",
+        "Table Mats",
+        "Coaster",
+        "Water Bottle Cover",
+        "Restaurant Chairs",
+        "Restaurant Tables",
+        "Over Lays",
+        "Runners",
+        "Banquet Table Cloth",
+        "Table Frills",
+        "Chair Covers",
+        "Chair Tie Back (Sash) & Bows",
+        "Waiter & Wiping Cloth",
+        "Dinner Napkins",
+        "Cocktail Napkins",
+        "Stage Cloth",
+        "Stage Frills",
+        "Banquet Chairs"
+      ]
     },
     {
       "name": "Drapes and Upholstery",
-      "coverImage": "upholsteryanddrapesmain.jpg"
+      "coverImage": "upholsteryanddrapesmain.jpg",
+      "items": [
+        "Sheer Curtains",
+        "Main/Heavy Curtains",
+        "Main Curtain with Blackout",
+        "Blinds",
+        "Cushions",
+        "Cushion Covers",
+        "Leather Writing Table Mats",
+        "Leather Upholstery",
+        "Sofa",
+        "Sofa Upholstery",
+        "Chairs",
+        "Writing Table",
+        "Coffee Table"
+      ]
     },
     {
       "name": "Spa & Pool",
-      "coverImage": "towel.jpg"
+      "coverImage": "towel.jpg",
+      "items": [
+        "Spa Towel",
+        "Spa Head Towel",
+        "Spa Foot Towel",
+        "Spa Hand Towel",
+        "Spa Bath Mat",
+        "Spa Bedsheet",
+        "Spa Bed Runner",
+        "Spa Aromatic Oils",
+
+        "Pool Towel",
+        "Weather proof fabrics"
+      ]
     },
     {
       "name": "Furnishings",
-      "coverImage": "furnituremain.jpg"
+      "coverImage": "furnituremain.jpg",
+      "items": []
     }
   ]
 }
