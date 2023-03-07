@@ -13,11 +13,16 @@ export default function AboutUs() {
           <h2 className="font-bold text-3xl">Our Company</h2>
           <div className="bg-gold w-20 h-1 mt-1 mb-3"></div>
           <p className="text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ratione
-            vero possimus nisi voluptatum quibusdam atque a dolor, voluptate
-            tempora sunt maxime ad quos eligendi mollitia distinctio modi, magni
-            hic beatae minus tempore pariatur provident sapiente. Soluta
-            assumenda itaque excepturi.
+            Decamyra&apos;s is an unit of Value Gain Distributors Private
+            Limited. Value Gain Distributors was established in 2012. We are the
+            manufacturer of Linen. The state-of-the-art laboratory provide the
+            ideal platform to conduct exhaustive quality checks during every
+            stage of production to ensure that the best product reaches the
+            customer. We offer a broad selection of finest quality of Bed & Bath
+            Linens, F&B, Banquet linens and also uniforms. Currently we cater to
+            Hotels, Hospitals, Restaurants, Spas, Corporates, Institutions &
+            Multi National Companies. We also customize the linen as per the
+            customer&apos;s requirement to suit their needs.
           </p>
         </div>
         <div className="space-y-10 w-full">
