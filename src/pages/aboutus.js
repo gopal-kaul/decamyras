@@ -31,7 +31,7 @@ export default function AboutUs() {
           </h2>
           <Marquee
             className="bg-black md:py-10"
-            height="300px"
+            height="250px"
             width="100%"
             reverse={true}
             align="center"
@@ -39,23 +39,23 @@ export default function AboutUs() {
             <div className="flex flex-row gap-10">
               <img
                 src="/carousel/1.jpg"
-                className="object-contain h-[400px] w-auto"
+                className="object-contain h-[300px] w-auto"
               />
               <img
                 src="/carousel/2.jpg"
-                className="object-contain h-[400px] w-auto"
+                className="object-contain h-[300px] w-auto"
               />
               <img
                 src="/carousel/3.jpg"
-                className="object-contain h-[400px] w-auto"
+                className="object-contain h-[300px] w-auto"
               />
               <img
                 src="/carousel/1.jpg"
-                className="object-contain h-[400px] w-auto"
+                className="object-contain h-[300px] w-auto"
               />
               <img
                 src="/carousel/2.jpg"
-                className="object-contain h-[400px] w-auto"
+                className="object-contain h-[300px] w-auto"
               />
             </div>
           </Marquee>
