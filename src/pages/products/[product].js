@@ -92,11 +92,14 @@ export default function ProductDetail({ product }) {
             </div>
             <div className="xl:w-[50%] min-h-full rounded-xl px-5">
               <h3 className="text-3xl font-bold pt-5">All Products</h3>
-              <div className="grid grid-cols-3 gap-y-6 py-8 text-md xl:text-xl">
+              <ul className="grid grid-cols-3 gap-y-6 py-8 text-md list-inside xl:text-xl">
                 {product.items.map((ele) => (
-                  <p key={ele}>{ele}</p>
+                  <li className="inline-flex items-center gap-x-2" key={ele}>
+                    <img src='/logo.png' className="h-[0.8em]" />
+                    <p>{ele}</p>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </div>
           </div>
           <div className="grid place-items-center">
