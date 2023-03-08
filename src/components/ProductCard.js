@@ -1,8 +1,9 @@
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import ReactCardFlip from "react-card-flip";
 
-export default function ProductCard({ product }) {
+export default function ProductCard({ product, index, setLoaded }) {
   const [flipped, setFlipped] = useState(false);
   return (
     <button
@@ -22,11 +23,21 @@ export default function ProductCard({ product }) {
     >
       <ReactCardFlip isFlipped={flipped}>
         <div className="relative h-[35vh]">
-          <img
+          <Image
+            fill
+            onLoadingComplete={() =>{
+              console.log(`Loaded ${index}`)
+              setLoaded((old) => {
+                let temp = [...old];
+                temp[index] = true;
+                return temp;
+              })
+            }
+            }
             src={`/products/${product.coverImage}`}
             className="object-cover w-full h-[35vh] z-10 rounded-3xl"
           />
-          <div className="absolute bottom-0 left-0 w-full text-center rounded-3xl bg-opacity-50 bg-cardWhite">
+          <div className="absolute bottom-0 left-0 w-full text-center rounded-3xl bg-opacity-50 bg-cardWhite z-20">
             <h2 className="font-bold py-1 text-xl">{product.name}</h2>
           </div>
         </div>

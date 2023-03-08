@@ -1,7 +1,7 @@
 import Head from "next/head";
 import data from "@/data.json";
-import Link from "next/link";
 import ProductCard from "@/components/ProductCard";
+import { useState } from "react";
 export async function getStaticProps() {
   return {
     props: {
@@ -10,6 +10,8 @@ export async function getStaticProps() {
   };
 }
 export default function Products({ products }) {
+  const [loaded, setLoaded] = useState(Array(products.length).fill(false));
+
   return (
     <>
       <Head>
@@ -17,9 +19,23 @@ export default function Products({ products }) {
         <meta name="description" content="Decamyra's" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
+      <div
+        className={`${
+          loaded.indexOf(false) === -1
+            ? "hidden"
+            : "w-full h-full grid place-items-center fixed bg-white z-50 opacity-100"
+        } transition-opacity duration-500 ease-in-out`}
+      >
+          <img src="/logo.png" className="w-40 animate-pulse" />
+      </div>
       <div className="bg-bgWhite min-h-full flex flex-row flex-wrap px-4 lg:px-20 gap-x-10 gap-y-20 py-10 rounded-lg justify-center">
-        {products.map((product) => (
-          <ProductCard key={product.name} product={product} />
+        {products.map((product, idx) => (
+          <ProductCard
+            index={idx}
+            setLoaded={setLoaded}
+            key={product.name}
+            product={product}
+          />
         ))}
       </div>
     </>
