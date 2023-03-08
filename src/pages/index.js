@@ -25,21 +25,21 @@ export default function Home() {
           loop={true}
         >
           <SwiperSlide>
-            <img src="/home/1.jpg" className="h-full w-full object-cover" />
+            <img src="/home/1.webp" className="h-full w-full object-cover" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/home/2.jpg" className="h-full w-full object-cover" />
+            <img src="/home/2.webp" className="h-full w-full object-cover" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/home/3.jpg" className="h-full w-full object-cover" />
+            <img src="/home/3.webp" className="h-full w-full object-cover" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/home/4.jpg" className="h-full w-full object-cover" />
+            <img src="/home/4.webp" className="h-full w-full object-cover" />
           </SwiperSlide>
         </Swiper>
         <div className="absolute top-0 left-0 w-full h-full bg-opacity-60 bg-[#000000] grid place-items-center text-white z-10">
           <div className="grid place-items-center">
-            <img src="/logo.png" className="w-32" />
+            <img src="/logo.webp" className="w-32" />
             <h2 className="font-artifexCF font-bold text-4xl text-center lg:text-6xl tracking-widest leading-tight pt-2 md:pt-2 text-gold">
               Decamyra&apos;s
             </h2>

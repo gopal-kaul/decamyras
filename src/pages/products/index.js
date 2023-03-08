@@ -26,7 +26,7 @@ export default function Products({ products }) {
             : "w-full h-full grid place-items-center fixed bg-white z-50 opacity-100"
         } transition-opacity duration-500 ease-in-out`}
       >
-          <img src="/logo.png" className="w-40 animate-pulse" />
+          <img src="/logo.webp" className="w-40 animate-pulse" />
       </div>
       <div className="bg-bgWhite min-h-full flex flex-row flex-wrap px-4 lg:px-20 gap-x-10 gap-y-20 py-10 rounded-lg justify-center">
         {products.map((product, idx) => (

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Fade } from "react-reveal";
-import logo from "../../public/logo.png";
+import logo from "../../public/logo.webp";
 import { useState } from "react";
 import Navlinks from "./Navlinks";
 

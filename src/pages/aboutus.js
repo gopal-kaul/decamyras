@@ -38,23 +38,23 @@ export default function AboutUs() {
           >
             <div className="flex flex-row gap-10">
               <img
-                src="/carousel/1.jpg"
+                src="/carousel/1.webp"
                 className="object-contain h-[300px] w-auto"
               />
               <img
-                src="/carousel/2.jpg"
+                src="/carousel/2.webp"
                 className="object-contain h-[300px] w-auto"
               />
               <img
-                src="/carousel/3.jpg"
+                src="/carousel/3.webp"
                 className="object-contain h-[300px] w-auto"
               />
               <img
-                src="/carousel/1.jpg"
+                src="/carousel/1.webp"
                 className="object-contain h-[300px] w-auto"
               />
               <img
-                src="/carousel/2.jpg"
+                src="/carousel/2.webp"
                 className="object-contain h-[300px] w-auto"
               />
             </div>

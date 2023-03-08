@@ -2,7 +2,7 @@
   "products": [
     {
       "name": "Bed Linen",
-      "coverImage": "bedlinenmain.jpg",
+      "coverImage": "bedlinenmain.webp",
       "items": [
         "Bed",
         "Bed Sheet",
@@ -28,7 +28,7 @@
     },
     {
       "name": "Bath Linen",
-      "coverImage": "bathlinenmain.jpg",
+      "coverImage": "bathlinenmain.webp",
       "items": [
         "Bath Towel",
         "Bath Sheet",
@@ -43,7 +43,7 @@
     },
     {
       "name": "F&B Linen",
-      "coverImage": "towel.jpg",
+      "coverImage": "towel.webp",
       "items": [
         "Table Cloth",
         "Moulton Cloth",
@@ -75,7 +75,7 @@
     },
     {
       "name": "Drapes and Upholstery",
-      "coverImage": "upholsteryanddrapesmain.jpg",
+      "coverImage": "upholsteryanddrapesmain.webp",
       "items": [
         "Sheer Curtains",
         "Main/Heavy Curtains",
@@ -94,7 +94,7 @@
     },
     {
       "name": "Spa & Pool",
-      "coverImage": "towel.jpg",
+      "coverImage": "towel.webp",
       "items": [
         "Spa Towel",
         "Spa Head Towel",
@@ -111,7 +111,7 @@
     },
     {
       "name": "Furnishings",
-      "coverImage": "furnituremain.jpg",
+      "coverImage": "furnituremain.webp",
       "items": []
     }
   ]

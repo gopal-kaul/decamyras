@@ -78,13 +78,13 @@ export default function ProductDetail({ product }) {
               >
                 <SwiperSlide>
                   <img
-                    src="/productcarousel/carousel1.jpg"
+                    src="/productcarousel/carousel1.webp"
                     className="w-full h-auto lg:h-full xl:w-auto object-cover md:rounded-l-xl rounded-t-xl"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
-                    src="/productcarousel/carousel2.jpg"
+                    src="/productcarousel/carousel2.webp"
                     className="w-full h-auto lg:h-full xl:w-auto object-cover md:rounded-l-xl rounded-t-xl"
                   />
                 </SwiperSlide>
@@ -95,7 +95,7 @@ export default function ProductDetail({ product }) {
               <ul className="grid grid-cols-3 gap-y-6 py-8 text-md list-inside xl:text-xl">
                 {product.items.map((ele) => (
                   <li className="inline-flex items-center gap-x-2" key={ele}>
-                    <img src='/logo.png' className="h-[0.8em]" />
+                    <img src='/logo.webp' className="h-[0.8em]" />
                     <p>{ele}</p>
                   </li>
                 ))}
