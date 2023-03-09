@@ -3,10 +3,18 @@ import ActiveLink from "./ActiveLink";
 export default function Navlinks() {
   return (
     <>
-      <ActiveLink href="/">home</ActiveLink>
-      <ActiveLink href="/products">products</ActiveLink>
-      <ActiveLink href="/aboutus">about us</ActiveLink>
-      <ActiveLink href="/contactus">contact us</ActiveLink>
+      <li>
+        <ActiveLink href="/">home</ActiveLink>
+      </li>
+      <li>
+        <ActiveLink href="/products">products</ActiveLink>
+      </li>
+      <li>
+        <ActiveLink href="/aboutus">about us</ActiveLink>
+      </li>
+      <li>
+        <ActiveLink href="/contactus">contact us</ActiveLink>
+      </li>
     </>
   );
 }
