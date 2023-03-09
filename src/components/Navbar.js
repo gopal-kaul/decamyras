@@ -14,6 +14,10 @@ export default function Navbar({ ...props }) {
         <div className="w-1/4 flex flex-row items-center gap-6 md:gap-10">
           <Image
             src={logo}
+            alt="Logo"
+            sizes="(min-width:768px) 4vw,
+                  10vw"
+            priority
             className="w-[10vw] md:w-[4vw] h-auto aspect-square"
           />
           <div className="">
