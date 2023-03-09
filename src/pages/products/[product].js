@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 import "swiper/css";
 import data from "@/data.json";
 import Link from "next/link";
+import Image from "next/image";
 
 export async function getStaticPaths() {
   const paths = data.products.map((product) => ({
@@ -95,7 +96,13 @@ export default function ProductDetail({ product }) {
               <ul className="grid grid-cols-3 gap-y-6 py-8 text-md list-inside xl:text-xl">
                 {product.items.map((ele) => (
                   <li className="inline-flex items-center gap-x-2" key={ele}>
-                    <img src='/logo.webp' className="h-[0.8em]" />
+                    <Image
+                      src="/logo.webp"
+                      alt="Logo"
+                      height="12"
+                      width="12"
+                      className="h-[0.8em]"
+                    />
                     <p>{ele}</p>
                   </li>
                 ))}

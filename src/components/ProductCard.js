@@ -26,7 +26,6 @@ export default function ProductCard({ product, index, setLoaded }) {
           <Image
             fill
             onLoadingComplete={() =>{
-              console.log(`Loaded ${index}`)
               setLoaded((old) => {
                 let temp = [...old];
                 temp[index] = true;
@@ -34,6 +33,7 @@ export default function ProductCard({ product, index, setLoaded }) {
               })
             }
             }
+            alt={product.name}
             src={`/products/${product.coverImage}`}
             className="object-cover w-full h-[35vh] z-10 rounded-3xl"
           />

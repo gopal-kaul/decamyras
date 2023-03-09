@@ -1,10 +1,14 @@
 import Head from "next/head";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation, Pagination } from "swiper";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+import { Autoplay, Pagination } from "swiper";
 import "swiper/css";
+import Image from "next/image";
+import i1 from "../../public/home/1.webp";
+import i2 from "../../public/home/2.webp";
+import i3 from "../../public/home/3.webp";
+import i4 from "../../public/home/4.webp";
+import logo from "../../public/logo.webp"
 export default function Home() {
   return (
     <>
@@ -15,31 +19,50 @@ export default function Home() {
       </Head>
       <div className="rounded-lg h-full relative flex flex-row flex-wrap overflow-hidden">
         <Swiper
-          modules={[Autoplay, Pagination, Navigation]}
+          modules={[Autoplay, Pagination]}
           autoplay={{ delay: 1500, disableOnInteraction: false }}
-          navigation={false}
           centeredSlides={true}
           speed={3000}
           pagination={{ clickable: false }}
           slidesPerView={1}
           loop={true}
         >
-          <SwiperSlide>
-            <img src="/home/1.webp" className="h-full w-full object-cover" />
+          <SwiperSlide className="w-full h-full relative aspect-auto">
+            <Image priority
+              alt="Carousel Image"
+              src={i1}
+              placeholder="blur"
+              className="h-full w-full object-cover"
+            />
           </SwiperSlide>
-          <SwiperSlide>
-            <img src="/home/2.webp" className="h-full w-full object-cover" />
+          <SwiperSlide className="w-full h-full relative aspect-auto">
+            <Image
+              alt="Carousel Image"
+              src={i2}
+              placeholder="blur"
+              className="h-full w-full object-cover"
+            />
           </SwiperSlide>
-          <SwiperSlide>
-            <img src="/home/3.webp" className="h-full w-full object-cover" />
+          <SwiperSlide className="w-full h-full relative aspect-auto">
+            <Image
+              alt="Carousel Image"
+              src={i3}
+              placeholder="blur"
+              className="h-full w-full object-cover"
+            />
           </SwiperSlide>
-          <SwiperSlide>
-            <img src="/home/4.webp" className="h-full w-full object-cover" />
+          <SwiperSlide className="w-full h-full relative aspect-auto">
+            <Image
+              alt="Carousel Image"
+              src={i4}
+              placeholder="blur"
+              className="h-full w-full object-cover"
+            />
           </SwiperSlide>
         </Swiper>
         <div className="absolute top-0 left-0 w-full h-full bg-opacity-60 bg-[#000000] grid place-items-center text-white z-10">
           <div className="grid place-items-center">
-            <img src="/logo.webp" className="w-32" />
+            <Image alt="Logo" width="150" height="150" src={logo} priority />
             <h2 className="font-artifexCF font-bold text-4xl text-center lg:text-6xl tracking-widest leading-tight pt-2 md:pt-2 text-gold">
               Decamyra&apos;s
             </h2>
