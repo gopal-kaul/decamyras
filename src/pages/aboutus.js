@@ -30,32 +30,73 @@ export default function AboutUs() {
             Our Clientele
           </h2>
           <Marquee
-            className="bg-black md:py-10"
-            height="250px"
+            className="md:py-10 h-full"
+            height="200px"
             width="100%"
+            duration={30000}
             reverse={true}
             align="center"
           >
-            <div className="flex flex-row gap-10">
+            <div className="flex flex-row gap-x-5 md:gap-x-16 items-center h-[200px] md:h-[200px] w-max">
               <img
-                src="/carousel/1.webp"
-                className="object-contain h-[300px] w-auto"
+                src="/clients/accor.webp"
+                className="object-contain w-auto h-full"
               />
               <img
-                src="/carousel/2.webp"
-                className="object-contain h-[300px] w-auto"
+                src="/clients/google.webp"
+                className="object-contain w-auto h-full"
               />
               <img
-                src="/carousel/3.webp"
-                className="object-contain h-[300px] w-auto"
+                src="/clients/taj.webp"
+                className="object-contain w-auto h-full"
               />
               <img
-                src="/carousel/1.webp"
-                className="object-contain h-[300px] w-auto"
+                src="/clients/genpact.webp"
+                className="object-contain w-auto h-full"
               />
               <img
-                src="/carousel/2.webp"
-                className="object-contain h-[300px] w-auto"
+                src="/clients/holidayinn.webp"
+                className="object-contain w-auto h-full"
+              />
+              <img
+                src="/clients/drreddys.webp"
+                className="object-contain w-auto h-full"
+              />
+              <img
+                src="/clients/itc.webp"
+                className="object-contain w-auto h-full"
+              />
+              <img
+                src="/clients/marriott.webp"
+                className="object-contain w-auto h-full"
+              />
+              <img
+                src="/clients/mayfair.webp"
+                className="object-contain w-auto h-full"
+              />
+              <img
+                src="/clients/novotel.webp"
+                className="object-contain w-auto h-full"
+              />
+              <img
+                src="/clients/parkhyatt.webp"
+                className="object-contain w-auto h-full"
+              />
+              <img
+                src="/clients/swosti.webp"
+                className="object-contain w-auto h-full"
+              />
+              <img
+                src="/clients/techmahindra.webp"
+                className="object-contain w-auto h-full"
+              />
+              <img
+                src="/clients/telanganatourism.webp"
+                className="object-contain w-auto h-full"
+              />
+              <img
+                src="/clients/westin.svg"
+                className="object-contain h-full w-auto"
               />
             </div>
           </Marquee>
