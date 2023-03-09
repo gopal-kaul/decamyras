@@ -43,6 +43,10 @@ export default function AboutUs() {
                 className="object-contain w-auto h-full"
               />
               <img
+                src="/clients/ap.webp"
+                className="object-contain w-auto h-full"
+              />
+              <img
                 src="/clients/google.webp"
                 className="object-contain w-auto h-full"
               />
